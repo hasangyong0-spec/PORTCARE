@@ -313,6 +313,59 @@ table.hold input.num{text-align:right;}
 
 .sticky-cta{padding:0.2rem 0 1.1rem;}
 
+/* ---------- 마켓 요약 장문 ---------- */
+.mkt-sum{border:1px solid var(--hairline);border-radius:12px;background:#fff;overflow:hidden;box-shadow:0 2px 10px rgba(21,36,54,0.05);}
+.mkt-sum-head{background:linear-gradient(135deg,var(--navy-deep),var(--navy));color:#fff;padding:1.1rem 1.4rem;border-bottom:2px solid var(--gold);}
+.mkt-sum-tag{font-size:0.66rem;font-weight:700;letter-spacing:0.6px;color:var(--gold-soft);}
+.mkt-sum-title{font-size:1.18rem;font-weight:700;margin-top:0.15rem;line-height:1.4;}
+@media(max-width:560px){.mkt-sum-title{font-size:1rem;}}
+.mkt-sum-body{padding:1.3rem 1.5rem 1.5rem;}
+@media(max-width:560px){.mkt-sum-body{padding:1.1rem 1.1rem 1.2rem;}}
+.ms-block{padding:0.95rem 0;border-top:1px solid var(--hairline-soft);}
+.ms-block:first-child{border-top:none;padding-top:0.2rem;}
+.ms-h{font-size:1rem;font-weight:700;color:var(--navy-deep);margin:0 0 0.5rem 0;padding-left:0.7rem;border-left:3px solid var(--brand-orange);line-height:1.35;}
+.ms-p{margin:0;font-size:0.9rem;line-height:1.95;color:var(--body-strong);text-align:justify;word-break:keep-all;}
+.ms-p b{color:var(--navy-deep);font-weight:700;}
+@media(max-width:560px){.ms-p{font-size:0.85rem;line-height:1.85;}.ms-h{font-size:0.92rem;}}
+
+/* ---------- 테마 카드 ---------- */
+.theme-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0.85rem;margin-top:1.1rem;}
+@media(max-width:900px){.theme-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:560px){.theme-grid{grid-template-columns:1fr;}}
+.tcard{border:1px solid var(--hairline);border-radius:11px;background:#fff;padding:1rem 1.05rem;display:flex;flex-direction:column;gap:0.4rem;}
+.tc-top{display:flex;align-items:center;gap:0.45rem;flex-wrap:wrap;}
+.tc-n{font-size:0.98rem;font-weight:700;color:var(--ink);}
+.tc-tag{font-size:0.62rem;font-weight:700;padding:0.14rem 0.5rem;border-radius:12px;white-space:nowrap;}
+.tt-핵심{background:#FBEDE1;color:var(--brand-orange);}
+.tt-성장{background:#E8F0FA;color:var(--navy);}
+.tt-보완{background:var(--gold-soft);color:var(--gold-deep);}
+.tt-방어{background:#EAF4EC;color:var(--success);}
+.tc-why{font-size:0.8rem;line-height:1.7;color:var(--body);margin:0;}
+.tc-how{font-size:0.76rem;line-height:1.65;color:var(--muted);margin:0;padding-top:0.35rem;border-top:1px dashed var(--hairline-soft);}
+.tc-picks{display:flex;flex-wrap:wrap;gap:0.25rem;margin-top:0.15rem;}
+.pick{font-size:0.65rem;font-weight:600;padding:0.15rem 0.45rem;border-radius:4px;background:var(--surface-soft);color:var(--body-strong);border:1px solid var(--hairline-soft);}
+
+/* ---------- 테마 배분 제안 ---------- */
+.tal{display:grid;grid-template-columns:132px 1fr 92px;align-items:center;gap:0.7rem;padding:0.62rem 0;border-top:1px solid var(--hairline-soft);}
+.tal:first-of-type{border-top:none;}
+@media(max-width:560px){.tal{grid-template-columns:96px 1fr 80px;gap:0.45rem;}}
+.tal-n{font-size:0.8rem;font-weight:700;color:var(--body-strong);line-height:1.3;}
+.tal-n small{display:block;font-weight:500;color:var(--muted);font-size:0.66rem;}
+.tal-bar{position:relative;height:20px;border-radius:4px;background:var(--hairline-soft);overflow:visible;}
+.tal-cur{position:absolute;left:0;top:0;bottom:0;background:var(--steel);opacity:0.85;border-radius:4px 0 0 4px;}
+.tal-tgt{position:absolute;top:-3px;bottom:-3px;width:3px;background:var(--brand-orange);border-radius:2px;}
+.tal-v{font-size:0.74rem;font-weight:700;text-align:right;line-height:1.35;}
+.tal-v small{display:block;font-weight:500;color:var(--muted);font-size:0.65rem;}
+.tal-v.up{color:var(--navy);} .tal-v.dn{color:var(--danger);} .tal-v.ok{color:var(--success);}
+.tal-note{font-size:0.75rem;color:var(--muted);line-height:1.6;margin-top:0.8rem;padding-top:0.7rem;border-top:1px dashed var(--hairline-soft);}
+
+/* ---------- 손익률 · 비중 셀 ---------- */
+.plr{font-size:0.82rem;font-weight:700;text-align:right;display:block;}
+.plr.up{color:var(--up);} .plr.dn{color:var(--down);} .plr.na{color:var(--muted-soft);font-weight:500;}
+.wt{font-size:0.82rem;font-weight:700;color:var(--navy-deep);text-align:right;display:block;}
+.wt small{display:block;font-weight:500;color:var(--muted-soft);font-size:0.62rem;}
+.col-money{width:126px;} .col-plr{width:82px;} .col-theme{width:158px;} .col-wt{width:74px;}
+
 /* ---------- comment / footer ---------- */
 .wrap-comment{max-width:1180px;margin:0 auto;padding:0 1.4rem 2.5rem;}
 @media(min-width:640px){.wrap-comment{padding-left:2rem;padding-right:2rem;}}
@@ -422,17 +475,18 @@ KODEX 200	300	4,120,500
     <div class="section-rule"></div>
     <span class="step-flag">STEP 2</span>
     <h2 class="section-title">잔고 확인 · 수정</h2>
-    <p class="section-sub">인식된 종목은 자산군이 자동 분류됩니다. <b>회색 자동</b> 표시는 확인이 필요한 항목이니, 종목명·금액·자산군을 고객 잔고와 대조해 수정해 주세요.</p>
+    <p class="section-sub">매입금액과 평가금액을 넣으면 손익률과 비중이 자동으로 계산됩니다. <b>확인필요</b> 표시가 붙은 항목은 종목명·테마를 한 번 더 확인해 주세요.</p>
     <div class="tbl-wrap">
       <div class="tbl-scroll">
         <table class="hold">
           <thead>
             <tr>
               <th class="col-name">종목명</th>
-              <th class="col-qty">수량</th>
-              <th class="col-amt">평가금액(원)</th>
-              <th class="col-cat">자산군</th>
-              <th class="col-cat">섹터 · 지역</th>
+              <th class="col-money">매입금액</th>
+              <th class="col-money">평가금액</th>
+              <th class="col-plr">손익률</th>
+              <th class="col-theme">테마</th>
+              <th class="col-wt">비중</th>
               <th class="col-del"></th>
             </tr>
           </thead>
@@ -446,7 +500,7 @@ KODEX 200	300	4,120,500
           <button class="btn ghost sm" id="btn-reset">전체 비우기</button>
           <button class="btn ghost sm" id="btn-sample">샘플 잔고로 체험</button>
         </div>
-        <div class="tot-amt"><span>총 평가금액</span><b id="total-amt">0 원</b></div>
+        <div class="tot-amt"><span>총 평가금액</span><b id="total-amt">0 원</b><b id="total-plr" style="font-size:0.8rem;margin-left:0.5rem;"></b></div>
       </div>
     </div>
   </section>
@@ -456,33 +510,28 @@ KODEX 200	300	4,120,500
     <div class="section-rule"></div>
     <span class="step-flag">STEP 3</span>
     <h2 class="section-title">고객 투자성향 선택</h2>
-    <p class="section-sub">선택한 성향에 따라 목표 자산배분과 허용 위험자산 비중이 달라집니다. 진단 기준이 바뀌므로 반드시 실제 투자자성향 결과와 일치시켜 주세요.</p>
+    <p class="section-sub">선택한 성향에 따라 목표 자산배분, 테마 권장 비중, 채권·배당 구성이 모두 달라집니다. 실제 투자자성향 결과와 일치시켜 주세요.</p>
     <div class="risk-row" id="risk-row"></div>
   </section>
 
-  <!-- ===== STEP 4 : 시황 ===== -->
+  <!-- ===== STEP 4 : 마켓 요약 ===== -->
   <section class="section">
     <div class="section-rule"></div>
     <span class="step-flag">STEP 4</span>
-    <h2 class="section-title">현재 시황 진단 기준</h2>
-    <p class="section-sub">아래 시장 국면을 기준으로 잔고를 평가합니다. 지수·환율·유가는 접속 시 자동 조회를 시도하고, 조회가 막히면 내장 스냅샷을 사용합니다.</p>
-    <div class="mkt-head">
-      <div class="mkt-stamp"><span class="dot-live" id="live-dot"></span><span id="live-label">내장 스냅샷 기준</span></div>
-      <button class="btn ghost sm" id="btn-refresh">시세 새로고침</button>
-    </div>
-    <div class="quote-grid" id="quote-grid"></div>
+    <h2 class="section-title">마켓 요약</h2>
+    <p class="section-sub">아래 시장 진단을 기준으로 잔고를 평가하고 리밸런싱 방향을 제시합니다.</p>
 
-    <div class="regime-box">
-      <div class="regime-head">
-        <div class="regime-tag">MARKET REGIME</div>
-        <div class="regime-title" id="regime-title">—</div>
+    <div class="mkt-sum">
+      <div class="mkt-sum-head">
+        <div class="mkt-sum-tag">MARKET REVIEW</div>
+        <div class="mkt-sum-title" id="mkt-title">—</div>
       </div>
-      <div class="regime-body">
-        <div id="regime-narrative"></div>
-        <div class="drv-grid" id="drv-grid"></div>
-        <div class="sig-grid" id="sig-grid"></div>
-      </div>
+      <div class="mkt-sum-body" id="mkt-body"></div>
     </div>
+
+    <h3 class="card-t" style="margin-top:1.6rem;font-size:1.05rem;">지금 주목하는 테마</h3>
+    <p class="card-s" style="margin-bottom:0;">각 테마의 투자 논리와 접근 방법, 대표 상품입니다. 성향별 권장 비중은 STEP 5 진단에서 현재 보유 비중과 비교해 보여드립니다.</p>
+    <div class="theme-grid" id="theme-grid"></div>
   </section>
 
   <!-- ===== STEP 5 : 진단 ===== -->
@@ -490,7 +539,7 @@ KODEX 200	300	4,120,500
     <div class="section-rule"></div>
     <span class="step-flag orange">STEP 5</span>
     <h2 class="section-title">포트폴리오 진단 결과</h2>
-    <p class="section-sub">잔고·투자성향·시황 세 가지를 교차해 종합 점수와 리밸런싱 방향을 제시합니다.</p>
+    <p class="section-sub">잔고 · 투자성향 · 시황 세 가지를 교차해 종합 점수와 리밸런싱 방향을 제시합니다.</p>
     <div class="sticky-cta">
       <button class="btn orange wide" id="btn-diagnose">포트폴리오 진단 실행</button>
     </div>
@@ -527,8 +576,22 @@ KODEX 200	300	4,120,500
       </div>
 
       <div class="card" style="margin-top:1.1rem;">
+        <p class="card-t">주도 테마 포트 구성안</p>
+        <p class="card-s" id="theme-alloc-sub">—</p>
+        <div id="theme-alloc"></div>
+        <div class="tal-note" id="theme-alloc-note"></div>
+      </div>
+
+      <div class="card" style="margin-top:1.1rem;">
+        <p class="card-t">채권 · 배당 인컴 구성 가이드</p>
+        <p class="card-s" id="income-sub">—</p>
+        <div id="income-alloc"></div>
+        <div class="tal-note" id="income-note"></div>
+      </div>
+
+      <div class="card" style="margin-top:1.1rem;">
         <p class="card-t">체크포인트</p>
-        <p class="card-s">성향 적합성·집중도·분산·시황 정합성에서 걸린 항목입니다.</p>
+        <p class="card-s">성향 적합성 · 집중도 · 분산 · 시황 정합성에서 걸린 항목입니다.</p>
         <div class="alert-list" id="alert-list"></div>
       </div>
 
@@ -546,8 +609,8 @@ KODEX 200	300	4,120,500
       </div>
 
       <div class="card" style="margin-top:1.1rem;">
-        <p class="card-t">리밸런싱 실행안</p>
-        <p class="card-s">목표 자산배분에 맞추기 위해 조정이 필요한 금액입니다. 세금·수수료·기존 매입단가는 반영되지 않았습니다.</p>
+        <p class="card-t">자산군 리밸런싱 실행안</p>
+        <p class="card-s">목표 자산배분에 맞추기 위해 조정이 필요한 금액입니다. 세금 · 수수료 · 매입단가는 반영되지 않았습니다.</p>
         <div class="act-grid">
           <div class="act-box sell"><p class="act-t">줄일 자산</p><div id="act-sell"></div></div>
           <div class="act-box buy"><p class="act-t">늘릴 자산</p><div id="act-buy"></div></div>
@@ -574,11 +637,11 @@ KODEX 200	300	4,120,500
   <div class="comment-box">
     <div class="comment-block">
       <div class="comment-label">진단 기준</div>
-      <p>본 진단은 입력된 평가금액을 기준으로 자산군·지역·섹터 비중을 산출하고, 투자자성향별 목표 자산배분과 현재 시장 국면(금리·유가·환율·업종 수급)을 교차해 정합성을 평가한 결과입니다. 종목의 개별 재무상태나 매입단가, 보유기간, 세제 혜택 계좌 여부는 반영되지 않으므로 실제 상담 시 반드시 함께 검토하시기 바랍니다.</p>
+      <p>본 진단은 입력된 평가금액을 기준으로 자산군 · 테마 · 지역 비중을 산출하고, 투자자성향별 목표 배분과 현재 시장 국면을 교차해 정합성을 평가한 결과입니다. 종목의 개별 재무상태나 매입 시점, 보유기간, 세제 혜택 계좌 여부는 반영되지 않으므로 실제 상담 시 반드시 함께 검토하시기 바랍니다.</p>
     </div>
     <div class="comment-block">
       <div class="comment-label">유의사항</div>
-      <p>문자 인식(OCR) 결과는 촬영 상태에 따라 오인식이 발생할 수 있으므로 진단 전 반드시 종목명과 평가금액을 확인해 주세요. 자동 조회된 시세는 지연 시세일 수 있으며, 조회에 실패하면 페이지에 내장된 스냅샷 수치가 사용됩니다. 제시된 비중과 리밸런싱 금액은 예시이며 특정 종목의 매수·매도를 권유하지 않습니다.</p>
+      <p>문자 인식(OCR) 결과는 촬영 상태에 따라 오인식이 발생할 수 있으므로 진단 전 반드시 종목명과 금액을 확인해 주세요. 제시된 테마 비중과 리밸런싱 금액은 현재 시장 국면을 전제로 한 예시이며, 특정 종목의 매수 · 매도를 권유하지 않습니다. 언급된 상품은 해당 테마의 대표 사례일 뿐 추천 종목이 아닙니다.</p>
     </div>
     <div class="comment-block">
       <div class="comment-label">개인정보</div>
@@ -589,7 +652,7 @@ KODEX 200	300	4,120,500
 
 <footer>
   <div class="footer-inner">
-    <p class="disclaimer">본 자료는 정보 제공을 목적으로 미래에셋증권 투자센터대구WM에서 작성하였으며, 시장 상황 변화에 따라 실제 내용과 차이가 있을 수 있습니다. 투자자는 금융투자상품 가입 전 투자설명서 및 상품설명서를 반드시 확인하시기 바랍니다. 금융투자상품은 원금손실이 발생할 수 있으며 그 손실은 투자자에게 귀속됩니다. 본 자료는 특정 종목의 매수·매도를 권유하지 않습니다.</p>
+    <p class="disclaimer">본 자료는 정보 제공을 목적으로 미래에셋증권 투자센터대구WM에서 작성하였으며, 시장 상황 변화에 따라 실제 내용과 차이가 있을 수 있습니다. 투자자는 금융투자상품 가입 전 투자설명서 및 상품설명서를 반드시 확인하시기 바랍니다. 금융투자상품은 원금손실이 발생할 수 있으며 그 손실은 투자자에게 귀속됩니다. 본 자료는 특정 종목의 매수 · 매도를 권유하지 않습니다.</p>
   </div>
 </footer>
 
@@ -597,72 +660,62 @@ KODEX 200	300	4,120,500
 
 <script>
 /* =======================================================================
-   1. 시장 스냅샷 · 국면 정의  (수동 갱신 블록)
+   1. 마켓 요약 · 국면 정의  (이 블록만 갱신하면 진단 기준이 바뀝니다)
    ======================================================================= */
 const MARKET = {
-  asOf: '2026-09-15 장마감',
-  quotes: [
-    {k:'kospi',  n:'코스피',        v:6627.26, c:-0.85, u:'p'},
-    {k:'kosdaq', n:'코스닥',        v:812.41,  c:0.70,  u:'p'},
-    {k:'spx',    n:'S&P 500',       v:null,    c:-0.48, u:'p'},
-    {k:'ndx',    n:'나스닥',        v:null,    c:-0.56, u:'p'},
-    {k:'ust10',  n:'미 국채 10년',  v:5.02,    c:null,  u:'%'},
-    {k:'ktb10',  n:'국고채 10년',   v:4.30,    c:null,  u:'%'},
-    {k:'brent',  n:'브렌트유',      v:107.35,  c:null,  u:'$'},
-    {k:'usdkrw', n:'원/달러',       v:null,    c:null,  u:'원'}
+  asOf: '2026년 9월',
+  title: '긴축 재개와 원자재 인플레, 그리고 AI 인프라 사이클의 공존',
+  summary: [
+    {h:'지금 시장을 한 문장으로', p:'지금 시장은 <b>할인율은 오르는데 성장 스토리는 살아 있는</b>, 방향이 한쪽으로 정리되지 않은 국면입니다. 금리와 유가가 동시에 오르면서 자산 가격의 기준선인 할인율은 계속 위로 밀리고 있지만, AI 투자 사이클이 만들어내는 실제 매출과 설비투자는 여전히 확장 중입니다. 그래서 지수는 흔들리는데 특정 업종은 신고가를 쓰는, 종목별 편차가 극단적으로 벌어지는 장세가 이어지고 있습니다. 이런 장에서 포트폴리오의 성패를 가르는 것은 시장 방향을 맞히는 일이 아니라, <b>흔들릴 때 버틸 수 있는 자산 구성을 갖고 있느냐</b>입니다.'},
+    {h:'금리 — 다시 올라간 할인율', p:'가장 큰 변수는 금리입니다. 미국 장기 국채 금리가 다시 위로 방향을 잡으면서 시장은 인하 사이클의 종료를 넘어 <b>재인상 가능성</b>까지 반영하기 시작했습니다. 연준이 이번에 한 차례 움직이느냐보다 중요한 것은 그 이후의 경로이며, 시장이 불안해하는 지점도 바로 여기입니다. 금리가 높은 수준에서 오래 머문다는 전제가 굳어지면, 먼 미래의 이익을 현재 가치로 끌어오는 자산일수록 불리해집니다. 이익이 아직 멀리 있는 성장 테마, 만기가 긴 채권, 조달 구조에 레버리지를 쓰는 리츠와 부동산 인프라가 여기에 해당합니다. 국내도 한국은행이 인상 쪽으로 방향을 틀면서 원화 채권 금리가 함께 올라, 예전처럼 채권을 사두면 안전하다는 공식이 통하지 않는 구간입니다.'},
+    {h:'유가·원자재 — 비용이 다시 오르고 있다', p:'두 번째 변수는 원자재입니다. 중동 산유 인프라에 대한 물리적 공격과 주요 해상 운송로의 불안이 겹치면서 원유가 다시 세 자릿수 영역으로 올라섰고, 구리와 곡물까지 동반 상승하는 흐름이 나타나고 있습니다. 문제는 이것이 단순한 가격 상승에서 끝나지 않는다는 점입니다. <b>원자재 가격이 오르면 물가가 오르고, 물가가 오르면 금리 인하가 멀어지고, 금리가 오르면 밸류에이션이 눌리는</b> 연쇄가 작동합니다. 업종으로 보면 에너지·정유·비철금속처럼 가격 상승을 그대로 수익으로 받는 쪽은 수혜를 보는 반면, 연료비와 원재료비를 원가로 떠안는 항공·해운·자동차·화학·유통은 마진이 깎입니다. 소비자 입장에서도 실질 구매력이 줄어 내수 소비주에는 이중의 부담입니다.'},
+    {h:'지정학 — 이제는 상수가 된 리스크', p:'중동의 에너지 인프라 공격, 주요 해협의 항행 불안, 강대국 간 기술·수출 통제 경쟁은 이제 일시적 돌발 변수가 아니라 <b>상시적으로 깔려 있는 배경</b>이 되었습니다. 이 환경은 세 가지 방향으로 돈의 흐름을 바꿉니다. 첫째, 각국이 국방 예산을 구조적으로 늘리면서 방산은 단발성 수주가 아니라 수년짜리 실적 가시성을 확보했습니다. 둘째, 공급망을 자국이나 우방국 안으로 되돌리는 흐름이 계속되면서 국내 제조 기반과 기자재 업체에 반사이익이 돌아갑니다. 셋째, 금과 같은 실물 안전자산에 대한 수요가 꾸준히 유지됩니다. 다만 금은 실질금리가 오르면 눌리는 성격도 함께 갖고 있어, 비중을 크게 싣기보다 보험 성격으로 담는 것이 적절합니다.'},
+    {h:'국내 증시 — 지수보다 업종이 중요해진 장', p:'국내 증시는 반도체 대형주의 등락에 지수 전체가 좌우되는 구조가 더 심해졌습니다. 외국인 수급이 반도체 두 종목에 집중되어 있다 보니, 이들이 흔들리면 지수가 통째로 밀리고 개인 자금이 그 물량을 받아내는 패턴이 반복됩니다. 이 말은 곧 <b>코스피 지수를 그냥 사는 것도 사실상 반도체에 베팅하는 것</b>이라는 뜻입니다. 반대로 지수가 부진한 날에도 전력기기, 방산, 조선처럼 수주 잔고가 쌓여 있는 업종은 따로 움직이는 경우가 늘었습니다. 지수 방향을 맞히려는 접근보다, 실적이 실제로 늘어나는 업종을 골라 담고 나머지는 인컴 자산으로 채우는 전략이 더 유효한 국면입니다.'},
+    {h:'지금 주목해야 할 테마', p:'첫째는 여전히 <b>반도체와 HBM</b>입니다. 가격 조정은 실적이 아니라 밸류에이션에서 나오고 있고 수출 지표는 견조합니다. 다만 외국인 수급에 따라 출렁임이 크므로 한 번에 담기보다 나누어 접근해야 합니다. 둘째는 <b>전력 인프라</b>입니다. AI 데이터센터가 늘어날수록 전력이 필요하고, 미국의 노후 전력망 교체와 국내 반도체 대형 투자까지 겹치면서 변압기·송배전 기자재의 수주 잔고가 몇 년치로 쌓이고 있습니다. AI 테마 중 실적이 가장 먼저, 가장 확실하게 찍히는 영역입니다. 셋째는 <b>로봇과 자동화</b>입니다. 인건비 상승과 제조 리쇼어링이 구조적 수요를 만들고 있지만 아직 이익 규모가 작아 금리에 민감하므로, 성장 배분 안에서 소액으로 접근하는 것이 맞습니다. 넷째는 <b>방산</b>으로, 지정학 상수화의 가장 직접적인 수혜 업종입니다. 마지막으로 <b>배당·인컴</b>입니다. 금리가 높다는 것은 가만히 있어도 받을 수 있는 이자가 두텁다는 뜻이고, 변동성이 큰 장에서는 이 현금흐름이 포트폴리오를 버티게 해주는 힘이 됩니다.'},
+    {h:'그래서 어떻게 담아야 하나', p:'정리하면 <b>성장은 테마로 좁게, 방어는 인컴으로 두텁게</b>입니다. 성장 쪽은 지수를 통째로 사기보다 전력·반도체·방산·로봇처럼 실적 근거가 있는 테마로 압축하고, 각 테마는 한두 종목에 몰지 말고 ETF를 축으로 삼는 편이 안전합니다. 방어 쪽은 만기가 긴 채권 대신 <b>짧은 만기 채권과 파킹형 상품</b>으로 높은 이자를 확보하고, 배당·커버드콜처럼 현금흐름이 나오는 자산을 함께 배치합니다. 그리고 금리 결정과 지정학 이벤트가 겹쳐 있는 구간인 만큼, 한 번에 전량을 조정하기보다 <b>2~3회로 나누어 옮기고 현금 여력을 남겨두는 것</b>이 지금 가장 중요한 원칙입니다.'}
   ],
-  title: '긴축 재개 · 원자재 인플레 국면',
-  narrative: [
-    '미 국채 10년물 금리가 2023년 이후 처음으로 5%를 넘어섰고(9/15 장중 5.02%), 30년물도 5% 위에서 움직이고 있습니다. 시장은 9월 FOMC에서 약 3년 만의 <b>금리 인상</b> 가능성을 80% 이상으로 반영하고 있으며, 인상 여부보다 <b>인상 이후의 금리 경로</b>에 초점이 맞춰져 있습니다.',
-    '사우디 동서 송유관 피격으로 글로벌 원유 공급의 약 4%가 차질을 빚으면서 브렌트유는 107달러대, WTI는 100달러를 넘어섰습니다. 구리·곡물까지 동반 상승하는 <b>원자재 슈퍼랠리</b>가 인플레이션 재점화 우려로 이어지며 금리 상승을 다시 자극하는 구조입니다.',
-    '국내 증시는 9월 14일 반도체 대형주 급락으로 코스피가 3.26% 하락하며 7,000선을 내준 뒤, 9월 15일 6,627.26(-0.85%)으로 6,600선을 가까스로 지켰습니다. 외국인이 1조 5,700억원, 기관이 9,044억원을 순매도했고 개인이 8,324억원을 받아냈습니다. 한국은행 기준금리는 8월 인상으로 3.00%, 국고채 10년물은 4.30% 수준입니다.',
-    '정리하면 <b>할인율(금리)은 오르고 원가(유가)는 뛰는</b> 국면입니다. 듀레이션이 길거나 밸류에이션이 높은 자산은 압박을 받고, 실물 원자재·에너지·단기 인컴 자산은 상대적으로 유리한 자리에 있습니다. 다만 FOMC 결과에 따라 방향이 한 번 더 크게 흔들릴 수 있는 만큼, 성향을 벗어난 과감한 베팅보다는 <b>편중 해소와 현금 여력 확보</b>가 우선입니다.'
-  ],
-  drivers: [
-    {t:'금리 — 미 10년물 5.02% 돌파', d:'2023년 이후 최고. 장기채·리츠·고PER 성장주의 할인율 부담이 직접적으로 커지는 구간입니다.'},
-    {t:'유가 — 브렌트 107달러대', d:'사우디 송유관 피격으로 공급 4% 차질. 에너지·원자재에는 순풍, 운송·항공·유통·화학에는 원가 역풍입니다.'},
-    {t:'통화정책 — 9월 FOMC 인상 확률 80%+', d:'3년 만의 인상 가능성. 한국은행 기준금리도 3.00%로 올라 추가 인상 경계가 남아 있습니다.'},
-    {t:'수급 — 외국인 1.6조 순매도', d:'반도체 대형주 중심의 외국인 이탈. 지수 변동성이 커진 만큼 단일 종목 집중은 위험도가 높아졌습니다.'}
-  ],
-  /* 섹터별 시황 점수 : +2 매우우호 ~ -2 매우비우호 */
+  /* 테마별 시황 점수 : +2 매우우호 ~ -2 매우비우호 */
   sector: {
-    energy:{s:2,  n:'에너지·정유',    r:'유가 100달러 돌파의 직접 수혜'},
-    oilcom:{s:2,  n:'원유 파생·선물', r:'공급 차질로 가격 상승 모멘텀 유지'},
-    material:{s:1,n:'소재·철강·비철', r:'구리 등 원자재 랠리, 다만 원가 전가 여부가 관건'},
-    defense:{s:1, n:'방산',           r:'지정학 리스크 확대로 수주 모멘텀 유효'},
-    ship:{s:1,    n:'조선',           r:'고선가 수주 잔고와 에너지 운반선 수요'},
-    battery:{s:1, n:'2차전지',        r:'낙폭 과대 인식 속 최근 반등(LG엔솔·포스코퓨처엠 강세)'},
-    construct:{s:1,n:'건설',          r:'9/15 강세 업종. 다만 금리 상승은 구조적 부담'},
-    telecom:{s:1, n:'통신·유틸리티',  r:'변동성 국면의 대표적 방어 섹터'},
-    divid:{s:1,   n:'고배당·가치',    r:'금리 상승기에 성장주 대비 상대 우위'},
-    cover:{s:1,   n:'커버드콜·인컴',  r:'변동성 확대 국면에서 옵션 프리미엄 수취 유리'},
-    bond_s:{s:1,  n:'단기채·파킹',    r:'고금리 캐리를 안전하게 확보, 듀레이션 위험 최소'},
-    cash:{s:1,    n:'현금성',         r:'FOMC 이벤트 대기 자금으로서 가치가 높은 국면'},
-    gold:{s:1,    n:'금',             r:'지정학·인플레 헤지 수요. 단 실질금리 상승은 부담'},
-    india:{s:1,   n:'인도',           r:'유가 부담은 있으나 내수 성장 모멘텀 지속'},
-    bank:{s:0,    n:'은행',           r:'금리 상승은 마진에 우호, 경기 둔화 우려는 부담'},
-    kr_index:{s:0,n:'국내 대표지수',  r:'코어 자산이나 반도체 비중이 높아 지수 자체의 변동성이 커진 국면'},
-    semi:{s:0,    n:'반도체·AI',      r:'수출은 견조하나 밸류에이션 압축과 외국인 매도로 변동성 최고조'},
-    bio:{s:0,     n:'바이오·헬스케어',r:'의료기기는 강세, 금리 상승은 성장 바이오에 부담'},
-    usbroad:{s:0, n:'미국 광의지수',  r:'조정 중이나 장기 코어 자산으로서 지위는 유지'},
-    japan:{s:0,   n:'일본',           r:'일본은행 정책 결정 대기, 엔화 방향이 변수'},
-    china:{s:0,   n:'중국',           r:'정책 기대와 수요 둔화가 상충'},
-    europe:{s:0,  n:'유럽',           r:'에너지 비용 부담이 재부각될 수 있는 구간'},
-    entertain:{s:0,n:'엔터·미디어',   r:'실적 개별성이 커 시황 영향은 중립'},
-    bigtech:{s:-1,n:'미국 빅테크',    r:'금리 5% 구간에서 멀티플 압축 압력'},
-    internet:{s:-1,n:'인터넷·플랫폼', r:'고금리 국면에서 성장 프리미엄 축소'},
-    insur:{s:-1,  n:'보험',           r:'9/15 -3.08%. 금리 급등에 따른 평가손 우려'},
-    consumer:{s:-1,n:'소비·유통',     r:'유통 -2.75%. 유가발 물가 부담이 소비 여력을 압박'},
-    em:{s:-1,     n:'신흥국',         r:'달러 강세·고금리에 자금 유출 압력'},
-    auto:{s:-2,   n:'자동차·운송장비',r:'운송장비 -3.35%. 유가 상승과 수요 둔화의 이중 압박'},
-    bigcap_growth:{s:-2,n:'고밸류 테마',r:'금리 5% 국면에서 가장 먼저 조정받는 영역'},
-    reit:{s:-2,   n:'리츠·부동산',    r:'금리 급등 시 조달비용 상승과 배당 매력 상대 하락'},
-    bond_l:{s:-2, n:'장기채',         r:'10년물 5% 돌파. 듀레이션 손실 위험이 가장 큰 자산'}
+    power:{s:2,   n:'전력 인프라',     r:'AI 데이터센터와 노후 전력망 교체로 수주 잔고가 수년치 쌓이는 구간'},
+    defense:{s:2, n:'방산·우주',       r:'지정학 리스크 상수화로 국방 예산이 구조적으로 증액되는 국면'},
+    energy:{s:2,  n:'에너지·정유',     r:'유가 강세를 그대로 실적으로 받는 직접 수혜 업종'},
+    oilcom:{s:2,  n:'원유·에너지 파생',r:'공급 차질이 이어지는 동안 가격 모멘텀이 유지되는 구간'},
+    material:{s:1,n:'소재·철강·비철',  r:'원자재 랠리 수혜, 다만 원가 전가 능력에 따라 종목별 편차가 큼'},
+    ship:{s:1,    n:'조선',            r:'에너지 운반 수요와 높은 선가의 수주 잔고가 실적을 받치는 구간'},
+    bond_s:{s:2,  n:'단기채·파킹',     r:'듀레이션 위험 없이 높은 이자를 확보할 수 있는 지금의 핵심 방어 자산'},
+    cash:{s:2,    n:'현금성',          r:'금리 이벤트 대기 자금으로서 기회비용이 낮아진 국면'},
+    cover:{s:1,   n:'커버드콜·인컴',   r:'변동성이 큰 장에서 옵션 프리미엄으로 현금흐름을 만드는 구조'},
+    divid:{s:1,   n:'고배당·가치',     r:'금리 상승기에 성장주 대비 상대 우위, 현금흐름이 하방을 지지'},
+    bond_m:{s:1,  n:'중기채',          r:'금리 고점 통과 시 자본차익까지 노릴 수 있는 균형 구간'},
+    telecom:{s:1, n:'통신·유틸리티',   r:'변동성 국면의 대표 방어 섹터, 배당 매력도 유효'},
+    gold:{s:1,    n:'금·귀금속',       r:'지정학·인플레 보험 성격. 단 실질금리 상승은 부담이라 소액 배분'},
+    construct:{s:1,n:'건설',           r:'전력망·데이터센터 인프라 투자와 연결되는 부분은 긍정적'},
+    robot:{s:1,   n:'로봇·자동화',     r:'리쇼어링과 인건비 상승이 만드는 구조적 수요. 다만 이익 규모가 작아 금리 민감'},
+    india:{s:1,   n:'인도',            r:'유가 부담은 있으나 내수 성장 모멘텀이 이어지는 시장'},
+    semi:{s:1,    n:'반도체·HBM',      r:'수출과 실적은 견조하나 밸류에이션 압축과 외국인 수급에 따라 변동성 최고조'},
+    bank:{s:0,    n:'은행·증권',       r:'금리 상승은 마진에 우호, 경기 둔화 우려는 부담으로 상쇄'},
+    kr_index:{s:0,n:'국내 대표지수',   r:'코어 자산이나 반도체 비중이 높아 사실상 반도체 베팅에 가까운 구조'},
+    bio:{s:0,     n:'바이오·헬스케어', r:'의료기기·제약은 방어적이나 고밸류 바이오는 금리에 취약'},
+    usbroad:{s:0, n:'미국 광의지수',   r:'조정 국면이나 장기 코어 자산으로서의 지위는 유지'},
+    japan:{s:0,   n:'일본',            r:'통화정책 전환 여부와 엔화 방향이 최대 변수'},
+    china:{s:0,   n:'중국',            r:'정책 기대와 수요 둔화가 팽팽하게 상충'},
+    europe:{s:0,  n:'유럽',            r:'에너지 비용 부담이 다시 부각될 수 있는 구간'},
+    entertain:{s:0,n:'엔터·미디어',    r:'실적 개별성이 커 시황보다 개별 모멘텀이 좌우'},
+    consumer:{s:-1,n:'소비·유통',      r:'원자재발 물가 부담이 실질 구매력과 마진을 동시에 압박'},
+    internet:{s:-1,n:'인터넷·플랫폼',  r:'고금리 국면에서 성장 프리미엄이 축소되는 영역'},
+    bigtech:{s:-1,n:'미국 빅테크',     r:'실적은 견조하나 금리 상승 구간에서 멀티플 압축 압력'},
+    insur:{s:-1,  n:'보험',            r:'금리 급등에 따른 평가손과 자본비율 부담이 부각'},
+    em:{s:-1,     n:'신흥국',          r:'달러 강세와 고금리에 자금 유출 압력이 지속'},
+    battery:{s:-1,n:'2차전지',         r:'낙폭 과대 반등은 나오지만 전방 수요 회복은 아직 확인 전'},
+    auto:{s:-2,   n:'자동차·운송',     r:'유가 상승에 따른 원가 부담과 수요 둔화의 이중 압박'},
+    bigcap_growth:{s:-2,n:'고밸류 테마',r:'이익이 먼 미래에 있어 금리 상승 구간에서 가장 먼저 조정'},
+    reit:{s:-2,   n:'리츠·부동산',     r:'조달금리 상승과 배당 매력 상대 하락이 동시에 작용'},
+    bond_l:{s:-2, n:'장기채',          r:'금리 상승 구간에서 듀레이션 손실 위험이 가장 큰 자산'}
   }
 };
 
 /* =======================================================================
-   2. 투자성향별 목표 자산배분
+   2. 자산군 · 투자성향별 목표 배분
    ======================================================================= */
 const CLASSES = {
   kr_eq:{n:'국내주식', c:'#043B72'},
@@ -671,26 +724,84 @@ const CLASSES = {
   alt  :{n:'대체·원자재', c:'#C9A227'},
   cash :{n:'현금성',   c:'#B9C4CF'}
 };
+/* 테마 → 기본 자산군 (수동으로 테마를 바꿀 때 적용) */
+const SEC_CLS = {
+  bond_s:'bond', bond_m:'bond', bond_l:'bond', cash:'cash',
+  gold:'alt', oilcom:'alt', reit:'alt',
+  usbroad:'gl_eq', bigtech:'gl_eq', japan:'gl_eq', china:'gl_eq',
+  europe:'gl_eq', india:'gl_eq', em:'gl_eq'
+};
 const PROFILES = [
   {k:'stable', n:'안정형', sub:'원금보존 최우선', dots:1, eq:'위험자산 20% 이하', maxRisk:2,
-   base:{kr_eq:5, gl_eq:8, bond:52, alt:8, cash:27},
-   tilt:{bond:-8, cash:5, alt:3}},
+   base:{kr_eq:5, gl_eq:8, bond:52, alt:8, cash:27}, tilt:{bond:-8, cash:5, alt:3}},
   {k:'stable_plus', n:'안정추구형', sub:'낮은 변동성 선호', dots:2, eq:'위험자산 20~40%', maxRisk:3,
-   base:{kr_eq:11, gl_eq:18, bond:45, alt:10, cash:16},
-   tilt:{bond:-7, cash:4, alt:3}},
+   base:{kr_eq:11, gl_eq:18, bond:45, alt:10, cash:16}, tilt:{bond:-7, cash:4, alt:3}},
   {k:'neutral', n:'위험중립형', sub:'수익·안정 균형', dots:3, eq:'위험자산 40~60%', maxRisk:4,
-   base:{kr_eq:19, gl_eq:30, bond:31, alt:12, cash:8},
-   tilt:{bond:-6, cash:3, alt:3}},
+   base:{kr_eq:19, gl_eq:30, bond:31, alt:12, cash:8}, tilt:{bond:-6, cash:3, alt:3}},
   {k:'active', n:'적극투자형', sub:'초과수익 추구', dots:4, eq:'위험자산 60~80%', maxRisk:5,
-   base:{kr_eq:26, gl_eq:43, bond:16, alt:10, cash:5},
-   tilt:{bond:-5, cash:2, alt:3}},
+   base:{kr_eq:26, gl_eq:43, bond:16, alt:10, cash:5}, tilt:{bond:-5, cash:2, alt:3}},
   {k:'aggressive', n:'공격투자형', sub:'고위험 감내', dots:5, eq:'위험자산 80% 이상', maxRisk:5,
-   base:{kr_eq:30, gl_eq:55, bond:6, alt:6, cash:3},
-   tilt:{bond:-3, cash:1, alt:2}}
+   base:{kr_eq:30, gl_eq:55, bond:6, alt:6, cash:3}, tilt:{bond:-3, cash:1, alt:2}}
 ];
 
 /* =======================================================================
-   3. 종목 · ETF 분류 DB
+   3. 현재 국면 주도 테마 · 성향별 권장 비중 (전체 자산 대비 %)
+   ======================================================================= */
+const THEMES = [
+  {k:'semi', n:'반도체 · HBM', tag:'핵심', secs:['semi'],
+   why:'AI 서버용 고대역폭 메모리 수요가 이익을 실제로 밀어올리고 있고 수출 지표도 견조합니다. 다만 외국인 수급에 따라 등락이 크므로 한 번에 담지 말고 분할로 접근해야 하는 영역입니다.',
+   how:'개별 종목 한두 개에 몰기보다 반도체 ETF를 축으로 삼고, 대형주는 그 위에 얹는 방식이 변동성을 줄입니다.',
+   picks:['KODEX 반도체','TIGER Fn반도체TOP10','TIGER 미국필라델피아반도체','삼성전자','SK하이닉스'],
+   w:{stable:2, stable_plus:4, neutral:8, active:13, aggressive:18}},
+  {k:'power', n:'전력 인프라', tag:'핵심', secs:['power'],
+   why:'데이터센터가 늘어날수록 전력이 필요하고, 미국 노후 전력망 교체와 국내 반도체 대형 투자까지 겹치면서 변압기·송배전 기자재 수주 잔고가 몇 년치로 쌓이고 있습니다. AI 테마 중 실적이 가장 먼저 확인되는 영역입니다.',
+   how:'국내 전력기기주와 미국 전력 인프라 ETF를 함께 담으면 원화·달러 양쪽 사이클을 모두 가져갈 수 있습니다.',
+   picks:['HD현대일렉트릭','LS ELECTRIC','효성중공업','HANARO 전력설비투자','KODEX 미국AI전력핵심인프라'],
+   w:{stable:3, stable_plus:5, neutral:8, active:11, aggressive:14}},
+  {k:'robot', n:'로봇 · 자동화', tag:'성장', secs:['robot'],
+   why:'인건비 상승과 제조 리쇼어링이 구조적 수요를 만들고 있습니다. 다만 아직 이익 규모가 작아 금리에 민감하게 반응하므로, 성장 배분 안에서 소액으로 가져가는 것이 적절합니다.',
+   how:'개별 종목은 변동성이 매우 크므로 ETF 중심으로 접근하고, 비중은 작게 유지하면서 길게 보는 자리입니다.',
+   picks:['KODEX 로봇액티브','RISE AI&로봇','TIGER 글로벌AI로봇','두산로보틱스','레인보우로보틱스'],
+   w:{stable:1, stable_plus:2, neutral:4, active:7, aggressive:10}},
+  {k:'defense', n:'방산 · 우주', tag:'핵심', secs:['defense'],
+   why:'지정학 리스크가 상시화되면서 각국 국방 예산이 구조적으로 늘고 있습니다. 수출 계약이 다년 실적으로 이어지는 구조라 경기 사이클과 상관이 낮다는 점이 장점입니다.',
+   how:'주가가 이미 많이 오른 구간이라 신규 진입은 분할로, 이미 보유 중이라면 목표 비중 내에서 유지하는 편이 좋습니다.',
+   picks:['PLUS K방산','TIGER 우주방산','한화에어로스페이스','현대로템','LIG넥스원'],
+   w:{stable:2, stable_plus:3, neutral:5, active:7, aggressive:9}},
+  {k:'energy', n:'에너지 · 원자재', tag:'보완', secs:['energy','oilcom','material','gold'],
+   why:'유가와 금속 가격 상승을 그대로 실적으로 받는 영역입니다. 포트폴리오 전체로 보면 물가가 오를 때 다른 자산의 손실을 상쇄해 주는 인플레이션 헤지 역할을 합니다.',
+   how:'가격 변동이 크므로 비중은 제한적으로 두되, 금은 별도의 보험 성격으로 소액 배분하는 것이 일반적입니다.',
+   picks:['KODEX 미국S&P에너지','TIGER 글로벌에너지','ACE KRX금현물','KODEX 골드선물'],
+   w:{stable:2, stable_plus:3, neutral:4, active:5, aggressive:5}},
+  {k:'income', n:'배당 · 인컴', tag:'방어', secs:['divid','cover','telecom'],
+   why:'금리가 높다는 것은 가만히 있어도 받을 수 있는 현금흐름이 두텁다는 뜻입니다. 변동성이 큰 장에서 이 배당이 포트폴리오의 하방을 지지하고, 재투자 재원이 되어 줍니다.',
+   how:'국내 고배당·밸류업과 미국 배당성장을 섞고, 변동성이 클 때는 커버드콜을 일부 더해 현금흐름을 두텁게 만듭니다.',
+   picks:['TIGER 미국배당다우존스','KODEX 고배당','TIGER 코리아밸류업','TIGER 미국S&P500커버드콜'],
+   w:{stable:10, stable_plus:14, neutral:15, active:12, aggressive:8}}
+];
+
+/* =======================================================================
+   4. 성향별 채권 · 인컴 구성 가이드 (전체 자산 대비 %)
+   ======================================================================= */
+const INCOME_GUIDE = {
+  stable:      {short:45, mid:25, long:6,  divid:10, note:'원금 보존이 최우선이므로 만기가 짧은 상품에 대부분을 두고, 장기채는 금리 방향에 대한 최소한의 베팅으로만 남깁니다.'},
+  stable_plus: {short:32, mid:22, long:6,  divid:14, note:'단기 중심 구조는 유지하되 중기채를 늘려 금리가 꺾일 때의 자본차익 여지를 조금 확보합니다.'},
+  neutral:     {short:20, mid:15, long:5,  divid:15, note:'단기와 중기를 균형 있게 가져가고, 배당형 주식으로 인컴의 한 축을 담당하게 하는 구성입니다.'},
+  active:      {short:11, mid:8,  long:3,  divid:12, note:'채권은 방어보다 변동성 완충 목적이므로 규모를 줄이되, 만기는 짧게 유지해 손실 위험을 최소화합니다.'},
+  aggressive:  {short:5,  mid:3,  long:1,  divid:8,  note:'채권 비중 자체가 작으므로 파킹형 위주로만 두고, 인컴은 배당·커버드콜 주식에서 확보합니다.'}
+};
+const INCOME_PICKS = {
+  short:['KODEX KOFR금리액티브','TIGER CD금리투자KIS','KODEX 단기채권','TIGER 국고채3년'],
+  mid:  ['KODEX 국고채10년','TIGER 투자등급회사채액티브','KODEX 종합채권액티브'],
+  long: ['TIGER 미국채30년','KODEX 국고채30년'],
+  divid:['TIGER 미국배당다우존스','KODEX 고배당','TIGER 코리아밸류업','TIGER 미국S&P500커버드콜']
+};
+const INCOME_LBL = {short:'단기채 · 파킹형', mid:'중기채', long:'장기채', divid:'배당 · 커버드콜 ETF'};
+</script>
+
+<script>
+/* =======================================================================
+   5. 종목 · ETF 분류 DB
    ======================================================================= */
 const DB = [];
 function S(n,cls,sec,reg,risk,alias){ DB.push({n:n,cls:cls,sec:sec,reg:reg,risk:risk,alias:alias||''}); }
@@ -708,11 +819,48 @@ S('TIGER 코스닥150','kr_eq','bigcap_growth','kr',4);
 S('KODEX 레버리지','kr_eq','bigcap_growth','kr',5,'레버리지');
 S('KODEX 200선물인버스2X','kr_eq','bigcap_growth','kr',5,'곱버스 인버스2X');
 S('KODEX 인버스','kr_eq','bigcap_growth','kr',5,'인버스');
-/* ---- 국내 섹터·테마 ETF ---- */
+/* ---- 반도체 ---- */
 S('KODEX 반도체','kr_eq','semi','kr',4);
 S('TIGER 반도체','kr_eq','semi','kr',4);
 S('TIGER Fn반도체TOP10','kr_eq','semi','kr',4,'반도체TOP10');
 S('KODEX AI반도체핵심장비','kr_eq','semi','kr',5,'AI반도체');
+S('SOL 반도체소부장Fn','kr_eq','semi','kr',5,'소부장');
+S('TIGER 200 IT','kr_eq','semi','kr',4);
+/* ---- 전력 인프라 ---- */
+S('HANARO 전력설비투자','kr_eq','power','kr',4,'전력설비 전력기기');
+S('KODEX 전력설비','kr_eq','power','kr',4);
+S('TIGER 전력설비','kr_eq','power','kr',4);
+S('KODEX 미국AI전력핵심인프라','gl_eq','power','us',4,'AI전력 미국전력');
+S('TIGER 미국AI전력인프라','gl_eq','power','us',4);
+S('RISE 글로벌전력','gl_eq','power','gl',4);
+S('HD현대일렉트릭','kr_eq','power','kr',4,'현대일렉트릭');
+S('LS ELECTRIC','kr_eq','power','kr',4,'LS일렉트릭 LS산전');
+S('효성중공업','kr_eq','power','kr',4);
+S('일진전기','kr_eq','power','kr',4);
+S('제룡전기','kr_eq','power','kr',5);
+S('산일전기','kr_eq','power','kr',5);
+S('대한전선','kr_eq','power','kr',4);
+S('LS','kr_eq','power','kr',4);
+S('LS마린솔루션','kr_eq','power','kr',5);
+S('가온전선','kr_eq','power','kr',4);
+S('비에이치아이','kr_eq','power','kr',5);
+S('두산에너빌리티','kr_eq','power','kr',4,'두산에너빌 원전');
+S('한전기술','kr_eq','power','kr',4);
+S('한전KPS','kr_eq','power','kr',3);
+/* ---- 로봇 · 자동화 ---- */
+S('KODEX 로봇액티브','kr_eq','robot','kr',5,'K로봇 로봇');
+S('RISE AI&로봇','kr_eq','robot','kr',5,'AI로봇');
+S('TIGER 글로벌AI로봇','gl_eq','robot','gl',5);
+S('KODEX 글로벌로봇','gl_eq','robot','gl',5);
+S('PLUS 글로벌로봇','gl_eq','robot','gl',5);
+S('두산로보틱스','kr_eq','robot','kr',5);
+S('레인보우로보틱스','kr_eq','robot','kr',5);
+S('로보티즈','kr_eq','robot','kr',5);
+S('에스피지','kr_eq','robot','kr',5);
+S('하이젠알앤엠','kr_eq','robot','kr',5);
+S('삼익THK','kr_eq','robot','kr',5);
+S('유일로보틱스','kr_eq','robot','kr',5);
+/* ---- 기타 국내 섹터 ETF ---- */
 S('TIGER 2차전지테마','kr_eq','battery','kr',5,'2차전지');
 S('KODEX 2차전지산업','kr_eq','battery','kr',5);
 S('TIGER 2차전지소재Fn','kr_eq','battery','kr',5);
@@ -733,9 +881,8 @@ S('TIGER 200 건설','kr_eq','construct','kr',4);
 S('KODEX 철강','kr_eq','material','kr',4,'철강');
 S('TIGER 200 에너지화학','kr_eq','material','kr',4,'에너지화학 화학');
 S('KODEX 에너지화학','kr_eq','material','kr',4);
-S('TIGER 200 IT','kr_eq','semi','kr',4);
 S('KODEX 미디어&엔터테인먼트','kr_eq','entertain','kr',4,'엔터');
-S('HANARO Fn K-POP&미디어','kr_eq','entertain','kr',4,'K-POP');
+S('HANARO Fn K-POP&미디어','kr_eq','entertain','kr',4,'KPOP');
 S('KODEX 게임산업','kr_eq','internet','kr',4,'게임');
 S('TIGER 소프트웨어','kr_eq','internet','kr',4,'소프트웨어');
 S('KODEX 필수소비재','kr_eq','consumer','kr',3,'필수소비재');
@@ -750,9 +897,8 @@ S('TIGER 코리아밸류업','kr_eq','divid','kr',3,'밸류업');
 S('KODEX 밸류업','kr_eq','divid','kr',3);
 S('TIGER 리츠부동산인프라','alt','reit','kr',3,'리츠 부동산인프라');
 S('KODEX 한국부동산리츠인프라','alt','reit','kr',3);
-S('PLUS 고배당주채권혼합','bond','divid','kr',2);
 /* ---- 해외 지수 ETF (국내상장) ---- */
-S('TIGER 미국S&P500','gl_eq','usbroad','us',3,'미국S&P500 S&P500');
+S('TIGER 미국S&P500','gl_eq','usbroad','us',3,'미국SP500 SP500');
 S('KODEX 미국S&P500','gl_eq','usbroad','us',3);
 S('ACE 미국S&P500','gl_eq','usbroad','us',3);
 S('RISE 미국S&P500','gl_eq','usbroad','us',3);
@@ -763,7 +909,6 @@ S('ACE 미국나스닥100','gl_eq','bigtech','us',4);
 S('TIGER 미국테크TOP10','gl_eq','bigtech','us',4,'테크TOP10 미국테크');
 S('KODEX 미국빅테크10','gl_eq','bigtech','us',4,'빅테크');
 S('TIGER 미국필라델피아반도체','gl_eq','semi','us',5,'필라델피아반도체 필반');
-S('ACE 미국주식베스트셀러','gl_eq','bigtech','us',4);
 S('TIGER 미국배당다우존스','gl_eq','divid','us',3,'미국배당다우존스 SCHD');
 S('SOL 미국배당다우존스','gl_eq','divid','us',3);
 S('ACE 미국배당다우존스','gl_eq','divid','us',3);
@@ -780,19 +925,17 @@ S('KODEX 차이나CSI300','gl_eq','china','cn',4,'CSI300');
 S('TIGER 인도니프티50','gl_eq','india','in',4,'인도니프티 인도');
 S('KODEX 인도Nifty50','gl_eq','india','in',4);
 S('TIGER 유로스탁스50','gl_eq','europe','eu',3,'유로스탁스');
-S('KODEX 선진국MSCI World','gl_eq','usbroad','gl',3,'MSCI World 선진국');
-S('TIGER 글로벌AI인프라','gl_eq','bigcap_growth','gl',5,'AI인프라');
-S('KODEX 글로벌로봇','gl_eq','bigcap_growth','gl',5,'로봇');
+S('KODEX 선진국MSCI World','gl_eq','usbroad','gl',3,'MSCIWorld 선진국');
+S('TIGER 글로벌AI인프라','gl_eq','power','gl',5,'AI인프라');
 S('TIGER 글로벌자율주행','gl_eq','bigcap_growth','gl',5,'자율주행');
 S('TIGER 글로벌리튬','gl_eq','battery','gl',5,'리튬');
-S('KODEX 미국서학개미','gl_eq','bigtech','us',4);
 /* ---- 채권 ETF ---- */
 S('TIGER 미국채30년','bond','bond_l','us',3,'미국채30년 장기채');
 S('KODEX 미국채30년','bond','bond_l','us',3);
 S('ACE 미국30년국채액티브','bond','bond_l','us',3);
-S('TIGER 미국채10년','bond','bond_l','us',2,'미국채10년');
+S('TIGER 미국채10년','bond','bond_m','us',2,'미국채10년');
 S('KODEX 국고채30년','bond','bond_l','kr',3,'국고채30년');
-S('KODEX 국고채10년','bond','bond_l','kr',2,'국고채10년');
+S('KODEX 국고채10년','bond','bond_m','kr',2,'국고채10년');
 S('KODEX 국고채3년','bond','bond_s','kr',1,'국고채3년');
 S('TIGER 국고채3년','bond','bond_s','kr',1);
 S('KODEX 단기채권','bond','bond_s','kr',1,'단기채권');
@@ -801,10 +944,10 @@ S('KODEX KOFR금리액티브','cash','cash','kr',1,'KOFR 파킹');
 S('TIGER CD금리투자KIS','cash','cash','kr',1,'CD금리 파킹');
 S('KODEX CD금리액티브','cash','cash','kr',1);
 S('TIGER 미국달러SOFR금리액티브','cash','cash','us',1,'SOFR 달러파킹');
-S('KODEX 종합채권액티브','bond','bond_l','kr',2,'종합채권');
-S('TIGER 투자등급회사채액티브','bond','bond_l','kr',2,'회사채');
-S('ACE 미국하이일드액티브','bond','bond_l','us',3,'하이일드');
-/* ---- 원자재·대체 ---- */
+S('KODEX 종합채권액티브','bond','bond_m','kr',2,'종합채권');
+S('TIGER 투자등급회사채액티브','bond','bond_m','kr',2,'회사채');
+S('ACE 미국하이일드액티브','bond','bond_m','us',3,'하이일드');
+/* ---- 원자재 · 대체 ---- */
 S('KODEX 골드선물','alt','gold','gl',3,'금 골드');
 S('ACE KRX금현물','alt','gold','kr',3,'금현물 KRX금');
 S('TIGER 골드선물','alt','gold','gl',3);
@@ -824,6 +967,8 @@ S('리노공업','kr_eq','semi','kr',4);
 S('이오테크닉스','kr_eq','semi','kr',5);
 S('주성엔지니어링','kr_eq','semi','kr',5);
 S('원익IPS','kr_eq','semi','kr',4);
+S('삼성전기','kr_eq','semi','kr',4);
+S('LG디스플레이','kr_eq','semi','kr',5);
 S('LG에너지솔루션','kr_eq','battery','kr',4,'LG엔솔 엔솔');
 S('삼성SDI','kr_eq','battery','kr',4);
 S('POSCO홀딩스','kr_eq','material','kr',4,'포스코홀딩스');
@@ -838,7 +983,6 @@ S('HD현대중공업','kr_eq','ship','kr',4,'현대중공업');
 S('한화오션','kr_eq','ship','kr',4);
 S('삼성중공업','kr_eq','ship','kr',4);
 S('HD한국조선해양','kr_eq','ship','kr',4);
-S('HD현대일렉트릭','kr_eq','material','kr',4);
 S('한화에어로스페이스','kr_eq','defense','kr',4,'한화에어로');
 S('현대로템','kr_eq','defense','kr',4);
 S('LIG넥스원','kr_eq','defense','kr',4);
@@ -862,7 +1006,7 @@ S('크래프톤','kr_eq','internet','kr',4);
 S('엔씨소프트','kr_eq','internet','kr',4);
 S('하이브','kr_eq','entertain','kr',4);
 S('JYP Ent.','kr_eq','entertain','kr',4,'JYP');
-S('에스엠','kr_eq','entertain','kr',4,'SM');
+S('에스엠','kr_eq','entertain','kr',4);
 S('LG화학','kr_eq','material','kr',4);
 S('롯데케미칼','kr_eq','material','kr',4);
 S('금호석유','kr_eq','material','kr',4);
@@ -878,8 +1022,6 @@ S('현대건설','kr_eq','construct','kr',4);
 S('GS건설','kr_eq','construct','kr',4);
 S('DL이앤씨','kr_eq','construct','kr',4);
 S('LG전자','kr_eq','consumer','kr',3);
-S('삼성전기','kr_eq','semi','kr',4);
-S('LG디스플레이','kr_eq','semi','kr',5);
 S('CJ제일제당','kr_eq','consumer','kr',3);
 S('오리온','kr_eq','consumer','kr',3);
 S('아모레퍼시픽','kr_eq','consumer','kr',4);
@@ -890,49 +1032,49 @@ S('대한항공','kr_eq','auto','kr',4);
 S('HMM','kr_eq','auto','kr',4);
 S('SK','kr_eq','kr_index','kr',3);
 S('LG','kr_eq','kr_index','kr',3);
-S('두산에너빌리티','kr_eq','material','kr',4,'두산에너빌');
-S('두산로보틱스','kr_eq','bigcap_growth','kr',5);
-S('레인보우로보틱스','kr_eq','bigcap_growth','kr',5);
 /* ---- 해외 개별주 · 해외상장 ETF ---- */
 S('엔비디아','gl_eq','semi','us',5,'NVDA NVIDIA');
 S('애플','gl_eq','bigtech','us',3,'AAPL APPLE');
 S('마이크로소프트','gl_eq','bigtech','us',3,'MSFT MICROSOFT');
 S('아마존','gl_eq','bigtech','us',4,'AMZN AMAZON');
 S('알파벳','gl_eq','bigtech','us',4,'GOOGL GOOG ALPHABET 구글');
-S('메타','gl_eq','bigtech','us',4,'META FB 메타플랫폼스');
+S('메타','gl_eq','bigtech','us',4,'META 메타플랫폼스');
 S('테슬라','gl_eq','bigcap_growth','us',5,'TSLA TESLA');
 S('브로드컴','gl_eq','semi','us',4,'AVGO BROADCOM');
-S('AMD','gl_eq','semi','us',5,'ADVANCED MICRO');
+S('AMD','gl_eq','semi','us',5,'ADVANCEDMICRO');
 S('마이크론','gl_eq','semi','us',5,'MU MICRON');
 S('TSMC','gl_eq','semi','tw',4,'TSM 대만반도체');
 S('ASML','gl_eq','semi','eu',4);
+S('버티브','gl_eq','power','us',5,'VRT VERTIV');
+S('GE버노바','gl_eq','power','us',4,'GEV VERNOVA');
+S('이튼','gl_eq','power','us',4,'ETN EATON');
+S('콴타서비스','gl_eq','power','us',4,'PWR QUANTA');
 S('팔란티어','gl_eq','bigcap_growth','us',5,'PLTR PALANTIR');
-S('일라이릴리','gl_eq','bio','us',3,'LLY ELI LILLY');
+S('일라이릴리','gl_eq','bio','us',3,'LLY ELILILLY');
 S('유나이티드헬스','gl_eq','bio','us',3,'UNH');
 S('존슨앤드존슨','gl_eq','bio','us',2,'JNJ');
 S('버크셔해서웨이','gl_eq','divid','us',3,'BRK BERKSHIRE');
 S('JP모건','gl_eq','bank','us',3,'JPM JPMORGAN');
 S('엑슨모빌','gl_eq','energy','us',3,'XOM EXXON');
 S('셰브론','gl_eq','energy','us',3,'CVX CHEVRON');
-S('코카콜라','gl_eq','consumer','us',2,'KO COCA');
+S('코카콜라','gl_eq','consumer','us',2,'KO COCACOLA');
 S('맥도날드','gl_eq','consumer','us',2,'MCD');
 S('코스트코','gl_eq','consumer','us',3,'COST COSTCO');
-S('비자','gl_eq','bank','us',3,'V VISA');
+S('비자','gl_eq','bank','us',3,'VISA');
 S('넷플릭스','gl_eq','entertain','us',4,'NFLX NETFLIX');
-S('SPY','gl_eq','usbroad','us',3,'SPDR S&P500 ETF');
-S('VOO','gl_eq','usbroad','us',3,'뱅가드S&P500');
+S('SPY','gl_eq','usbroad','us',3,'SPDR');
+S('VOO','gl_eq','usbroad','us',3,'뱅가드SP500');
 S('IVV','gl_eq','usbroad','us',3);
-S('QQQ','gl_eq','bigtech','us',4,'인베스코 나스닥100 ETF');
+S('QQQ','gl_eq','bigtech','us',4,'인베스코나스닥100');
 S('QQQM','gl_eq','bigtech','us',4);
 S('SCHD','gl_eq','divid','us',3,'슈드');
 S('VTI','gl_eq','usbroad','us',3);
-S('VT','gl_eq','usbroad','gl',3);
 S('SOXX','gl_eq','semi','us',5,'반도체ETF');
 S('SMH','gl_eq','semi','us',5);
 S('JEPI','gl_eq','cover','us',3);
 S('JEPQ','gl_eq','cover','us',3);
 S('TLT','bond','bond_l','us',3,'미국20년국채');
-S('IEF','bond','bond_l','us',2);
+S('IEF','bond','bond_m','us',2);
 S('SHY','bond','bond_s','us',1);
 S('SGOV','cash','cash','us',1);
 S('BIL','cash','cash','us',1);
@@ -941,11 +1083,10 @@ S('IAU','alt','gold','gl',3);
 S('USO','alt','oilcom','gl',5);
 S('XLE','gl_eq','energy','us',4,'에너지섹터');
 S('VNQ','alt','reit','us',3,'미국리츠');
-S('EWY','gl_eq','em','kr',4);
 S('EEM','gl_eq','em','gl',4,'신흥국');
 S('INDA','gl_eq','india','in',4);
 S('EWJ','gl_eq','japan','jp',3);
-/* ---- 현금·기타 ---- */
+/* ---- 현금 ---- */
 S('현금성자산','cash','cash','kr',1,'현금 예수금 예수금액 CMA MMF RP 발행어음 예금');
 S('원화예수금','cash','cash','kr',1);
 S('외화예수금','cash','cash','us',1,'달러예수금');
@@ -953,163 +1094,180 @@ S('외화예수금','cash','cash','us',1,'달러예수금');
 
 <script>
 /* =======================================================================
-   4. 공통 유틸
+   6. 공통 유틸
    ======================================================================= */
 const $ = function(id){ return document.getElementById(id); };
 const won = function(v){ return (Math.round(v||0)).toLocaleString('ko-KR'); };
 const pct = function(v,d){ return (v||0).toFixed(d===undefined?1:d); };
+function clamp(v,a,b){ return Math.max(a,Math.min(b,v)); }
 function toast(msg){
   const t=$('toast'); t.textContent=msg; t.classList.add('show');
   clearTimeout(t._tm); t._tm=setTimeout(function(){t.classList.remove('show');},2200);
 }
+function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function normKey(s){ return String(s||'').toUpperCase().replace(/[\s\-_.,()\[\]&+·'"/]/g,''); }
 
 DB.forEach(function(d){
   d._keys=[normKey(d.n)];
   if(d.alias) d.alias.split(/\s+/).filter(Boolean).forEach(function(a){ d._keys.push(normKey(a)); });
 });
+MARKET.sector.unknown={s:0,n:'미분류',r:'테마가 자동 분류되지 않아 시황 평가에서 중립 처리했습니다'};
 
 const FALLBACK=[
-  [/단기통안|통안채|CD금리|KOFR|SOFR|파킹|MMF|CMA|발행어음|예수금|예금|현금|RP$|MONEYMARKET/i,'cash','cash',1],
+  [/단기통안|통안채|CD금리|KOFR|SOFR|파킹|MMF|CMA|발행어음|예수금|예금|현금/i,'cash','cash',1],
   [/커버드콜|COVEREDCALL|JEPI|JEPQ/i,'gl_eq','cover',3],
-  [/국고채30|국고채10|미국채30|미국채10|장기채|30년국채|20년국채|종합채권|회사채|하이일드|TLT|IEF/i,'bond','bond_l',2],
-  [/국고채3|단기채|SHY|초단기/i,'bond','bond_s',1],
-  [/채권|국공채|BOND/i,'bond','bond_l',2],
+  [/국고채30|국고채20|미국채30|미국채20|장기채|30년국채|20년국채|TLT/i,'bond','bond_l',2],
+  [/국고채3|국고채1|단기채|SHY|초단기/i,'bond','bond_s',1],
+  [/국고채10|미국채10|종합채권|회사채|하이일드|중기채|IEF/i,'bond','bond_m',2],
+  [/채권|국공채|BOND/i,'bond','bond_m',2],
   [/금현물|골드|GOLD|금선물|은선물|SILVER/i,'alt','gold',3],
-  [/원유|WTI|브렌트|CRUDE|OIL선물/i,'alt','oilcom',5],
+  [/원유|WTI|브렌트|CRUDE/i,'alt','oilcom',5],
   [/리츠|REIT|부동산인프라/i,'alt','reit',3],
   [/고배당|배당성장|배당다우|밸류업|DIVIDEND|SCHD/i,'kr_eq','divid',3],
-  [/코스피|KOSPI|코스닥|KOSDAQ|\b200\b/i,'kr_eq','kr_index',3],
-  [/반도체|SEMI|SOXX|필라델피아/i,'kr_eq','semi',4],
-  [/2차전지|이차전지|배터리|리튬|BATTERY/i,'kr_eq','battery',5],
+  [/전력|변압기|송배전|전선|중전기|그리드|GRID|POWER/i,'kr_eq','power',4],
+  [/로봇|ROBOT|자동화|협동로봇/i,'kr_eq','robot',5],
   [/방산|우주항공|DEFENSE/i,'kr_eq','defense',4],
+  [/반도체|SEMI|SOXX|필라델피아|소부장|HBM/i,'kr_eq','semi',4],
+  [/2차전지|이차전지|배터리|리튬|BATTERY/i,'kr_eq','battery',5],
   [/조선|중공업|SHIP/i,'kr_eq','ship',4],
   [/바이오|헬스케어|제약|의료|BIO|HEALTH/i,'kr_eq','bio',4],
-  [/은행|금융지주|BANK/i,'kr_eq','bank',3],
+  [/은행|금융지주|증권|BANK/i,'kr_eq','bank',3],
   [/보험|INSUR/i,'kr_eq','insur',3],
-  [/자동차|운송|항공|AUTO/i,'kr_eq','auto',4],
+  [/자동차|운송|항공|해운|AUTO/i,'kr_eq','auto',4],
   [/건설|CONSTRUCT/i,'kr_eq','construct',4],
-  [/통신|유틸리티|전력|TELECOM/i,'kr_eq','telecom',2],
+  [/통신|유틸리티|한국전력|TELECOM/i,'kr_eq','telecom',2],
   [/철강|화학|소재|구리|비철|MATERIAL/i,'kr_eq','material',4],
   [/에너지|정유|ENERGY|XLE/i,'gl_eq','energy',4],
+  [/코스피|KOSPI|코스닥|KOSDAQ|\b200\b/i,'kr_eq','kr_index',3],
   [/차이나|중국|항셍|CSI|CHINA/i,'gl_eq','china',4],
   [/니케이|일본|TOPIX|JAPAN/i,'gl_eq','japan',3],
   [/인도|니프티|NIFTY|INDIA/i,'gl_eq','india',4],
   [/유럽|유로|EURO|STOXX/i,'gl_eq','europe',3],
   [/신흥국|EMERGING/i,'gl_eq','em',4],
-  [/나스닥|NASDAQ|QQQ|빅테크|테크TOP|BIGTECH/i,'gl_eq','bigtech',4],
-  [/S&P500|SP500|미국|다우|러셀|US$|VOO|SPY|VTI/i,'gl_eq','usbroad',3],
-  [/AI|로봇|자율주행|메타버스|우주|양자|테마/i,'kr_eq','bigcap_growth',5],
+  [/나스닥|NASDAQ|QQQ|빅테크|테크TOP/i,'gl_eq','bigtech',4],
+  [/S&P500|SP500|미국|다우|러셀|VOO|SPY|VTI/i,'gl_eq','usbroad',3],
+  [/AI|자율주행|메타버스|양자|테마/i,'kr_eq','bigcap_growth',5],
   [/레버리지|인버스|2X|3X|선물/i,'kr_eq','bigcap_growth',5]
 ];
-
 function matchSecurity(name){
   const nk=normKey(name);
-  if(!nk) return null;
-  let best=null,bestLen=0,exact=false;
+  if(!nk) return {cls:'kr_eq',sec:'unknown',reg:'kr',risk:3,conf:'guess'};
+  let best=null,bestLen=0;
   for(let i=0;i<DB.length;i++){
     const d=DB[i];
     for(let j=0;j<d._keys.length;j++){
       const k=d._keys[j]; if(k.length<2) continue;
-      if(k===nk){ return {cls:d.cls,sec:d.sec,reg:d.reg,risk:d.risk,name:d.n,conf:'auto'}; }
-      if(k.length>=3 && (nk.indexOf(k)>=0 || k.indexOf(nk)>=0)){
-        if(k.length>bestLen){ bestLen=k.length; best=d; }
-      }
+      if(k===nk) return {cls:d.cls,sec:d.sec,reg:d.reg,risk:d.risk,conf:'auto'};
+      if(k.length>=3 && (nk.indexOf(k)>=0 || k.indexOf(nk)>=0) && k.length>bestLen){ bestLen=k.length; best=d; }
     }
   }
-  if(best && bestLen>=4) return {cls:best.cls,sec:best.sec,reg:best.reg,risk:best.risk,name:best.n,conf:'auto'};
-  if(best && bestLen>=3) return {cls:best.cls,sec:best.sec,reg:best.reg,risk:best.risk,name:best.n,conf:'guess'};
+  if(best && bestLen>=4) return {cls:best.cls,sec:best.sec,reg:best.reg,risk:best.risk,conf:'auto'};
+  if(best && bestLen>=3) return {cls:best.cls,sec:best.sec,reg:best.reg,risk:best.risk,conf:'guess'};
   for(let i=0;i<FALLBACK.length;i++){
     if(FALLBACK[i][0].test(name)){
-      return {cls:FALLBACK[i][1],sec:FALLBACK[i][2],reg:FALLBACK[i][1]==='gl_eq'?'us':'kr',risk:FALLBACK[i][3],name:name,conf:'guess'};
+      const cls=FALLBACK[i][1];
+      return {cls:cls,sec:FALLBACK[i][2],reg:cls==='gl_eq'?'us':'kr',risk:FALLBACK[i][3],conf:'guess'};
     }
   }
-  return {cls:'kr_eq',sec:'unknown',reg:'kr',risk:3,name:name,conf:'guess'};
+  return {cls:'kr_eq',sec:'unknown',reg:'kr',risk:3,conf:'guess'};
 }
-MARKET.sector.unknown={s:0,n:'미분류',r:'자산군이 자동 분류되지 않아 시황 평가에서 중립 처리했습니다'};
+function clsForSec(sec,reg){
+  if(SEC_CLS[sec]) return SEC_CLS[sec];
+  return reg==='kr'?'kr_eq':'gl_eq';
+}
 
 /* =======================================================================
-   5. 잔고 상태
+   7. 잔고 상태
    ======================================================================= */
-let HOLD=[];
-let profileKey='neutral';
-let nextId=1;
-
+let HOLD=[], profileKey='neutral', nextId=1;
 function addHolding(o){
   const m=matchSecurity(o.name);
-  HOLD.push({
-    id:nextId++, name:o.name, qty:o.qty||'', amt:o.amt||0,
-    cls:o.cls||m.cls, sec:o.sec||m.sec, reg:m.reg, risk:m.risk, conf:o.conf||m.conf
-  });
+  HOLD.push({ id:nextId++, name:o.name||'', buy:o.buy||0, amt:o.amt||0,
+              cls:m.cls, sec:m.sec, reg:m.reg, risk:m.risk, conf:m.conf });
 }
 function totalAmt(){ return HOLD.reduce(function(a,b){ return a+(Number(b.amt)||0); },0); }
+function totalBuy(){ return HOLD.reduce(function(a,b){ return a+(Number(b.buy)||0); },0); }
 
 function renderHold(){
   const tb=$('hold-body'); tb.innerHTML='';
   $('hold-empty').style.display = HOLD.length?'none':'block';
-  const secOpts=Object.keys(MARKET.sector).map(function(k){
-    return '<option value="'+k+'">'+MARKET.sector[k].n+'</option>';
-  }).join('');
+  const total=totalAmt();
+  const secKeys=Object.keys(MARKET.sector).sort(function(a,b){ return MARKET.sector[b].s-MARKET.sector[a].s; });
+  const secOpts=secKeys.map(function(k){ return '<option value="'+k+'">'+MARKET.sector[k].n+'</option>'; }).join('');
   HOLD.forEach(function(h){
-    const tr=document.createElement('tr');
+    const r = (h.buy>0 && h.amt>0) ? (h.amt-h.buy)/h.buy*100 : null;
+    const w = total>0 ? h.amt*100/total : 0;
     const pill = h.conf==='auto'?'<span class="match-pill match-auto">자동</span>'
                : h.conf==='manual'?'<span class="match-pill match-manual">확인</span>'
                : '<span class="match-pill match-guess">확인필요</span>';
+    const tr=document.createElement('tr');
     tr.innerHTML=
-      '<td class="col-name"><input type="text" value="'+String(h.name).replace(/"/g,'&quot;')+'" data-f="name" data-id="'+h.id+'">'+pill+'</td>'+
-      '<td class="col-qty"><input class="num" type="text" value="'+(h.qty||'')+'" data-f="qty" data-id="'+h.id+'"></td>'+
-      '<td class="col-amt"><input class="num" type="text" value="'+won(h.amt)+'" data-f="amt" data-id="'+h.id+'"></td>'+
-      '<td class="col-cat"><select data-f="cls" data-id="'+h.id+'">'+
-        Object.keys(CLASSES).map(function(k){ return '<option value="'+k+'"'+(k===h.cls?' selected':'')+'>'+CLASSES[k].n+'</option>'; }).join('')+
-      '</select></td>'+
-      '<td class="col-cat"><select data-f="sec" data-id="'+h.id+'">'+secOpts+'</select></td>'+
+      '<td class="col-name"><input type="text" value="'+esc(h.name)+'" data-f="name" data-id="'+h.id+'">'+pill+'</td>'+
+      '<td class="col-money"><input class="num" type="text" value="'+(h.buy?won(h.buy):'')+'" placeholder="선택" data-f="buy" data-id="'+h.id+'"></td>'+
+      '<td class="col-money"><input class="num" type="text" value="'+(h.amt?won(h.amt):'')+'" data-f="amt" data-id="'+h.id+'"></td>'+
+      '<td class="col-plr"><span class="plr '+(r===null?'na':r>=0?'up':'dn')+'">'+(r===null?'—':(r>=0?'+':'')+pct(r,2)+'%')+'</span></td>'+
+      '<td class="col-theme"><select data-f="sec" data-id="'+h.id+'">'+secOpts+'</select></td>'+
+      '<td class="col-wt"><span class="wt">'+pct(w)+'%<small>'+CLASSES[h.cls].n+'</small></span></td>'+
       '<td class="col-del"><button class="row-del" data-del="'+h.id+'" title="삭제">✕</button></td>';
     tb.appendChild(tr);
     tr.querySelector('select[data-f="sec"]').value=h.sec;
   });
-  $('total-amt').textContent=won(totalAmt())+' 원';
+  $('total-amt').textContent=won(total)+' 원';
+  const tb2=totalBuy();
+  const tr2 = tb2>0 ? (total-tb2)/tb2*100 : null;
+  const el=$('total-plr');
+  el.textContent = tr2===null?'' : '('+(tr2>=0?'+':'')+pct(tr2,2)+'%)';
+  el.style.color = tr2===null?'':(tr2>=0?'var(--up)':'var(--down)');
 }
-
 function findH(id){ return HOLD.filter(function(x){ return x.id==id; })[0]; }
 
 document.addEventListener('input',function(e){
-  const t=e.target; const id=t.getAttribute&&t.getAttribute('data-id'); if(!id) return;
+  const t=e.target, id=t.getAttribute&&t.getAttribute('data-id'); if(!id) return;
   const h=findH(id); if(!h) return; const f=t.getAttribute('data-f');
-  if(f==='name'){ h.name=t.value; const m=matchSecurity(t.value); if(m){ h.cls=m.cls; h.sec=m.sec; h.reg=m.reg; h.risk=m.risk; h.conf=m.conf; } }
-  else if(f==='qty'){ h.qty=t.value; }
-  else if(f==='amt'){ h.amt=Number(String(t.value).replace(/[^\d.-]/g,''))||0; $('total-amt').textContent=won(totalAmt())+' 원'; }
+  if(f==='name'){ h.name=t.value; const m=matchSecurity(t.value); h.cls=m.cls; h.sec=m.sec; h.reg=m.reg; h.risk=m.risk; h.conf=m.conf; }
+  else if(f==='buy'){ h.buy=Number(String(t.value).replace(/[^\d.]/g,''))||0; }
+  else if(f==='amt'){ h.amt=Number(String(t.value).replace(/[^\d.]/g,''))||0; }
+  clearTimeout(window._rt); window._rt=setTimeout(function(){
+    const ae=document.activeElement, k=ae&&ae.getAttribute?ae.getAttribute('data-f'):null, i=ae&&ae.getAttribute?ae.getAttribute('data-id'):null, p=ae&&ae.selectionStart;
+    renderHold();
+    if(k&&i){ const n=document.querySelector('[data-f="'+k+'"][data-id="'+i+'"]'); if(n){ n.focus(); try{ n.setSelectionRange(p,p); }catch(err){} } }
+  },700);
 });
 document.addEventListener('change',function(e){
-  const t=e.target; const id=t.getAttribute&&t.getAttribute('data-id'); if(!id) return;
-  const h=findH(id); if(!h) return; const f=t.getAttribute('data-f');
-  if(f==='cls'){ h.cls=t.value; h.conf='manual'; renderHold(); }
-  else if(f==='sec'){ h.sec=t.value; h.conf='manual'; renderHold(); }
-  else if(f==='name'){ renderHold(); }
+  const t=e.target, id=t.getAttribute&&t.getAttribute('data-id'); if(!id) return;
+  const h=findH(id); if(!h) return;
+  if(t.getAttribute('data-f')==='sec'){ h.sec=t.value; h.cls=clsForSec(t.value,h.reg); h.conf='manual'; renderHold(); }
 });
 document.addEventListener('click',function(e){
   const d=e.target.getAttribute&&e.target.getAttribute('data-del');
   if(d){ HOLD=HOLD.filter(function(x){ return x.id!=d; }); renderHold(); }
 });
-$('btn-add-row').onclick=function(){ addHolding({name:'',amt:0}); renderHold(); };
+$('btn-add-row').onclick=function(){ addHolding({name:''}); renderHold(); };
 $('btn-reset').onclick=function(){ HOLD=[]; renderHold(); $('result-section').classList.remove('show'); };
+$('btn-sample').onclick=function(){
+  HOLD=[];
+  [['삼성전자',14400000,16200000],['SK하이닉스',17200000,21600000],
+   ['TIGER 미국S&P500',16800000,18450000],['TIGER 미국나스닥100',16100000,15120000],
+   ['HD현대일렉트릭',7400000,9600000],['KODEX 미국채30년',13100000,11250000],
+   ['TIGER 리츠부동산인프라',11200000,9800000],['현대차',15100000,13800000],
+   ['KODEX 골드선물',7600000,9100000],['현금성자산',4800000,4800000]]
+  .forEach(function(r){ addHolding({name:r[0],buy:r[1],amt:r[2]}); });
+  renderHold(); toast('샘플 잔고를 불러왔습니다');
+};
 
 /* =======================================================================
-   6. 텍스트 파싱
+   8. 텍스트 · OCR 파싱
    ======================================================================= */
 const SKIP=/(^|\s)(종목\s*명|상품\s*명|합\s*계|총\s*계|소\s*계|총\s*합|평가\s*금액\s*계|총\s*평가|총\s*자산|잔고\s*평가|매입\s*금액\s*계|보유\s*수량|평가\s*손익\s*계|추정\s*자산|순\s*자산|예\s*탁\s*자산|계좌\s*번호|구\s*분|전체\s*합)/;
+const BRANDS=/^(KODEX|TIGER|ACE|RISE|PLUS|SOL|HANARO|KOSEF|ARIRANG|KBSTAR|KIWOOM|BNK|WOORI|히어로즈|파워|마이티)$/i;
 function numify(s){
-  s=String(s).replace(/[,\s]/g,'');
-  let mult=1;
+  s=String(s).replace(/[,\s]/g,''); let mult=1;
   if(/억/.test(s)){ mult=100000000; s=s.replace('억',''); }
   else if(/만/.test(s)){ mult=10000; s=s.replace('만',''); }
   s=s.replace(/[^\d.-]/g,'');
-  const v=parseFloat(s);
-  return isNaN(v)?null:v*mult;
+  const v=parseFloat(s); return isNaN(v)?null:v*mult;
 }
-const BRANDS=/^(KODEX|TIGER|ACE|RISE|PLUS|SOL|HANARO|KOSEF|ARIRANG|KBSTAR|KIWOOM|BNK|WOORI|히어로즈|파워|마이티)$/i;
-function isNumTok(t){
-  return /\d/.test(t) && /^[+-]?[\d,]+(\.\d+)?\s*[억만]?\s*(%|원|주|좌)?$/.test(t);
-}
+function isNumTok(t){ return /\d/.test(t) && /^[+-]?[\d,]+(\.\d+)?\s*[억만]?\s*(%|원|주|좌)?$/.test(t); }
 function parseBalanceText(text){
   const out=[];
   String(text).split(/\r?\n/).forEach(function(line){
@@ -1121,46 +1279,46 @@ function parseBalanceText(text){
     let i=toks.length;
     while(i>0 && isNumTok(toks[i-1])) i--;
     let nameToks=toks.slice(0,i), numToks=toks.slice(i);
-    while(nameToks.length && numToks.length && BRANDS.test(nameToks[nameToks.length-1])){
-      nameToks.push(numToks.shift());
-    }
+    while(nameToks.length && numToks.length && BRANDS.test(nameToks[nameToks.length-1])) nameToks.push(numToks.shift());
     if(!nameToks.length || !numToks.length) return;
     let name=nameToks.join(' ').replace(/^[^\wㄱ-힣]+/,'').replace(/[^\wㄱ-힣%)\]]+$/,'').trim();
-    if(name.length<1) return;
-    const nums=[];
+    if(!name) return;
+    const nums=[]; let rate=null;
     numToks.forEach(function(t){
-      if(/%/.test(t)) return;
-      const v=numify(t); if(v!==null) nums.push(Math.abs(v));
+      if(/%/.test(t)){ if(rate===null){ const r=parseFloat(String(t).replace(/[^\d.-]/g,'')); if(!isNaN(r)) rate=/^-|▼|손/.test(t)?-Math.abs(r):r; } return; }
+      const v=numify(t); if(v!==null) nums.push({v:Math.abs(v)});
     });
-    const big=nums.filter(function(v){ return v>=1000; });
+    const big=nums.filter(function(x){ return x.v>=10000; });
     if(!big.length) return;
-    const amt=Math.max.apply(null,big);
-    let qty='';
-    for(let j=0;j<nums.length;j++){ if(nums[j]!==amt && nums[j]>0){ qty=nums[j]; break; } }
-    out.push({name:name,qty:qty,amt:amt});
+    /* 금액 후보 중 가장 큰 두 개를 원래 순서대로 = [매입, 평가] */
+    const sorted=big.slice().sort(function(a,b){ return b.v-a.v; });
+    const top=sorted.slice(0,2);
+    const inOrder=big.filter(function(x){ return top.indexOf(x)>=0; });
+    let buy=0, amt=0;
+    if(inOrder.length>=2){ buy=inOrder[0].v; amt=inOrder[1].v; }
+    else { amt=inOrder[0].v; }
+    /* 손익률이 있으면 정합성 보정 */
+    if(rate!==null && buy>0){
+      const impl=(amt-buy)/buy*100;
+      if(Math.abs(impl-rate)>Math.abs((buy-amt)/amt*100-rate)){ const t2=buy; buy=amt; amt=t2; }
+    } else if(rate!==null && !buy && amt>0 && rate>-100){
+      buy=Math.round(amt/(1+rate/100));
+    }
+    out.push({name:name,buy:buy,amt:amt});
   });
   return out;
 }
 function ingest(rows,src){
   if(!rows.length){ toast('인식된 종목이 없습니다. 표를 직접 입력해 주세요.'); return; }
-  rows.forEach(function(r){ addHolding({name:r.name,qty:r.qty,amt:r.amt}); });
+  rows.forEach(function(r){ addHolding(r); });
   renderHold();
   toast(rows.length+'개 종목을 불러왔습니다'+(src?' ('+src+')':''));
   $('hold-body').scrollIntoView({behavior:'smooth',block:'center'});
 }
 $('btn-parse-text').onclick=function(){ ingest(parseBalanceText($('paste-area').value),'텍스트'); };
-$('btn-sample').onclick=function(){
-  HOLD=[];
-  [['삼성전자',180,16200000],['SK하이닉스',40,21600000],['TIGER 미국S&P500',900,18450000],
-   ['TIGER 미국나스닥100',420,15120000],['KODEX 미국채30년',1500,11250000],
-   ['TIGER 리츠부동산인프라',2000,9800000],['현대차',60,13800000],
-   ['KODEX 골드선물',700,9100000],['현금성자산','',4800000]]
-  .forEach(function(r){ addHolding({name:r[0],qty:r[1],amt:r[2]}); });
-  renderHold(); toast('샘플 잔고를 불러왔습니다');
-};
 
 /* =======================================================================
-   7. 업로드 · OCR
+   9. 업로드 · OCR
    ======================================================================= */
 let IMGS=[];
 const menuRow=$('menu-btn-row');
@@ -1172,20 +1330,16 @@ menuRow.addEventListener('click',function(e){
   $('panel-paste').classList.toggle('show', mode==='paste');
   if(mode==='camera') $('file-camera').click();
   if(mode==='file') $('file-pick').click();
-  if(mode==='manual'){ if(!HOLD.length){ addHolding({name:'',amt:0}); addHolding({name:'',amt:0}); renderHold(); } $('hold-body').scrollIntoView({behavior:'smooth',block:'center'}); }
+  if(mode==='manual'){ if(!HOLD.length){ addHolding({name:''}); addHolding({name:''}); renderHold(); } $('hold-body').scrollIntoView({behavior:'smooth',block:'center'}); }
 });
 function renderThumbs(){
-  const r=$('thumb-row'); r.innerHTML='';
-  IMGS.forEach(function(im,i){
-    const d=document.createElement('div'); d.className='thumb';
-    d.innerHTML='<img src="'+im.url+'" alt=""><button class="th-x" data-img="'+i+'">✕</button><div class="th-state">'+(im.state||'대기')+'</div>';
-    r.appendChild(d);
-  });
+  $('thumb-row').innerHTML=IMGS.map(function(im,i){
+    return '<div class="thumb"><img src="'+im.url+'" alt=""><button class="th-x" data-img="'+i+'">✕</button><div class="th-state">'+(im.state||'대기')+'</div></div>';
+  }).join('');
   $('btn-ocr').disabled = IMGS.length===0;
 }
 $('thumb-row').addEventListener('click',function(e){
-  const i=e.target.getAttribute('data-img');
-  if(i!==null&&i!==undefined&&e.target.classList.contains('th-x')){ IMGS.splice(Number(i),1); renderThumbs(); }
+  if(e.target.classList.contains('th-x')){ IMGS.splice(Number(e.target.getAttribute('data-img')),1); renderThumbs(); }
 });
 function loadScript(src){
   return new Promise(function(res,rej){
@@ -1197,13 +1351,10 @@ function loadScript(src){
 async function pdfToImages(file){
   await loadScript('https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js');
   window.pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js';
-  const buf=await file.arrayBuffer();
-  const pdf=await window.pdfjsLib.getDocument({data:buf}).promise;
-  const urls=[];
-  const n=Math.min(pdf.numPages,5);
+  const pdf=await window.pdfjsLib.getDocument({data:await file.arrayBuffer()}).promise;
+  const urls=[], n=Math.min(pdf.numPages,5);
   for(let p=1;p<=n;p++){
-    const page=await pdf.getPage(p);
-    const vp=page.getViewport({scale:2.0});
+    const page=await pdf.getPage(p), vp=page.getViewport({scale:2.0});
     const cv=document.createElement('canvas'); cv.width=vp.width; cv.height=vp.height;
     await page.render({canvasContext:cv.getContext('2d'),viewport:vp}).promise;
     urls.push(cv.toDataURL('image/png'));
@@ -1215,15 +1366,12 @@ async function handleFiles(files){
     const f=files[i];
     if(f.type==='application/pdf'||/\.pdf$/i.test(f.name)){
       $('ocr-bar').classList.add('show'); $('ocr-msg').textContent='PDF를 이미지로 변환하는 중…';
-      try{ const us=await pdfToImages(f); us.forEach(function(u){ IMGS.push({url:u,state:'대기'}); }); }
+      try{ (await pdfToImages(f)).forEach(function(u){ IMGS.push({url:u,state:'대기'}); }); }
       catch(err){ toast('PDF 변환에 실패했습니다. 캡처 이미지를 사용해 주세요.'); }
       $('ocr-bar').classList.remove('show');
-    } else if(/^image\//.test(f.type)){
-      IMGS.push({url:URL.createObjectURL(f),state:'대기'});
-    }
+    } else if(/^image\//.test(f.type)) IMGS.push({url:URL.createObjectURL(f),state:'대기'});
   }
-  renderThumbs();
-  $('panel-image').classList.add('show');
+  renderThumbs(); $('panel-image').classList.add('show');
 }
 $('file-camera').onchange=function(e){ handleFiles(e.target.files); e.target.value=''; };
 $('file-pick').onchange=function(e){ handleFiles(e.target.files); e.target.value=''; };
@@ -1234,12 +1382,11 @@ dz.onclick=function(){ $('file-pick').click(); };
 dz.addEventListener('drop',function(e){ if(e.dataTransfer&&e.dataTransfer.files) handleFiles(e.dataTransfer.files); });
 window.addEventListener('paste',function(e){
   if(!e.clipboardData) return;
-  const items=e.clipboardData.items; const fs=[];
-  for(let i=0;i<items.length;i++){ if(items[i].type.indexOf('image')===0){ const f=items[i].getAsFile(); if(f) fs.push(f); } }
+  const fs=[]; const items=e.clipboardData.items;
+  for(let i=0;i<items.length;i++) if(items[i].type.indexOf('image')===0){ const f=items[i].getAsFile(); if(f) fs.push(f); }
   if(fs.length){ handleFiles(fs); toast('클립보드 이미지를 불러왔습니다'); }
 });
 $('btn-clear-img').onclick=function(){ IMGS=[]; renderThumbs(); };
-
 $('btn-ocr').onclick=async function(){
   if(!IMGS.length) return;
   const btn=this; btn.disabled=true;
@@ -1249,12 +1396,10 @@ $('btn-ocr').onclick=async function(){
   try{
     await loadScript('https://cdn.jsdelivr.net/npm/tesseract.js@5.1.0/dist/tesseract.min.js');
     worker=await window.Tesseract.createWorker(['kor','eng'],1,{
-      logger:function(m){
-        if(m.status==='recognizing text'){ $('ocr-fill').style.width=(15+m.progress*80)+'%'; }
-      }
+      logger:function(m){ if(m.status==='recognizing text') $('ocr-fill').style.width=(15+m.progress*80)+'%'; }
     });
   }catch(err){
-    $('ocr-msg').textContent='인식 엔진을 불러오지 못했습니다. 네트워크를 확인하거나 붙여넣기·수기 입력을 이용해 주세요.';
+    $('ocr-msg').textContent='인식 엔진을 불러오지 못했습니다. 네트워크를 확인하거나 붙여넣기 · 수기 입력을 이용해 주세요.';
     btn.disabled=false; return;
   }
   let all=[];
@@ -1264,8 +1409,7 @@ $('btn-ocr').onclick=async function(){
     try{
       const r=await worker.recognize(IMGS[i].url);
       const rows=parseBalanceText(r.data.text);
-      all=all.concat(rows);
-      IMGS[i].state=rows.length+'건';
+      all=all.concat(rows); IMGS[i].state=rows.length+'건';
     }catch(err){ IMGS[i].state='실패'; }
     renderThumbs();
   }
@@ -1280,98 +1424,58 @@ renderThumbs();
 
 <script>
 /* =======================================================================
-   8. 투자성향 카드
+   10. 투자성향 · 마켓 요약 렌더
    ======================================================================= */
+function profile(){ return PROFILES.filter(function(p){ return p.k===profileKey; })[0]; }
+function targetAlloc(p){
+  const t={}; let sum=0;
+  Object.keys(CLASSES).forEach(function(k){ t[k]=Math.max(0,(p.base[k]||0)+((p.tilt&&p.tilt[k])||0)); sum+=t[k]; });
+  Object.keys(t).forEach(function(k){ t[k]=t[k]*100/sum; });
+  return t;
+}
 function renderProfiles(){
   $('risk-row').innerHTML=PROFILES.map(function(p){
     let dots=''; for(let i=1;i<=5;i++) dots+='<span class="rc-dot'+(i<=p.dots?' on':'')+'"></span>';
     return '<button class="risk-card'+(p.k===profileKey?' active':'')+'" data-p="'+p.k+'">'+
-      '<span class="rc-dots">'+dots+'</span>'+
-      '<span class="rc-name">'+p.n+'</span>'+
-      '<span class="rc-sub">'+p.sub+'</span>'+
-      '<span class="rc-eq">'+p.eq+'</span></button>';
+      '<span class="rc-dots">'+dots+'</span><span class="rc-name">'+p.n+'</span>'+
+      '<span class="rc-sub">'+p.sub+'</span><span class="rc-eq">'+p.eq+'</span></button>';
   }).join('');
 }
 $('risk-row').addEventListener('click',function(e){
   const b=e.target.closest('.risk-card'); if(!b) return;
-  profileKey=b.getAttribute('data-p'); renderProfiles();
+  profileKey=b.getAttribute('data-p'); renderProfiles(); renderThemeCards();
   if($('result-section').classList.contains('show')) diagnose();
 });
-function profile(){ return PROFILES.filter(function(p){ return p.k===profileKey; })[0]; }
-function targetAlloc(p){
-  const t={}; let sum=0;
-  Object.keys(CLASSES).forEach(function(k){ t[k]=(p.base[k]||0)+((p.tilt&&p.tilt[k])||0); if(t[k]<0)t[k]=0; sum+=t[k]; });
-  Object.keys(t).forEach(function(k){ t[k]=t[k]*100/sum; });
-  return t;
-}
-
-/* =======================================================================
-   9. 시세 렌더 · 자동 조회
-   ======================================================================= */
-function renderQuotes(){
-  $('quote-grid').innerHTML=MARKET.quotes.map(function(q){
-    const v = q.v===null?'—':(q.u==='%'?q.v.toFixed(2)+'%':q.u==='$'?'$'+q.v.toFixed(2):q.u==='원'?won(q.v)+'원':q.v.toLocaleString('ko-KR',{minimumFractionDigits:2,maximumFractionDigits:2}));
-    let c='<span class="q-chg flat">—</span>';
-    if(q.c!==null&&q.c!==undefined) c='<span class="q-chg '+(q.c>0?'up':q.c<0?'down':'flat')+'">'+(q.c>0?'▲':q.c<0?'▼':'')+' '+Math.abs(q.c).toFixed(2)+'%</span>';
-    return '<div class="q-card"><div class="q-name">'+q.n+'</div><div class="q-val">'+v+'</div>'+c+'</div>';
-  }).join('');
-  $('regime-title').textContent=MARKET.title;
-  $('regime-narrative').innerHTML=MARKET.narrative.map(function(p){ return '<p>'+p+'</p>'; }).join('');
-  $('drv-grid').innerHTML=MARKET.drivers.map(function(d){ return '<div class="drv"><div class="drv-t">'+d.t+'</div><div class="drv-d">'+d.d+'</div></div>'; }).join('');
-  const keys=Object.keys(MARKET.sector).filter(function(k){ return k!=='unknown'; });
-  keys.sort(function(a,b){ return MARKET.sector[b].s-MARKET.sector[a].s; });
-  $('sig-grid').innerHTML=keys.map(function(k){
-    const s=MARKET.sector[k];
-    const cn = s.s>0 ? ('led-'+s.s) : (s.s<0 ? ('led'+(-s.s)) : 'led0');
-    return '<div class="sig" title="'+s.r+'"><span class="sig-led '+cn+'"></span><span class="sig-n">'+s.n+'</span></div>';
+function renderMarket(){
+  $('mkt-title').textContent=MARKET.title;
+  $('mkt-body').innerHTML=MARKET.summary.map(function(s){
+    return '<div class="ms-block"><h4 class="ms-h">'+s.h+'</h4><p class="ms-p">'+s.p+'</p></div>';
   }).join('');
   $('mast-date').textContent='진단 기준 시황 · '+MARKET.asOf;
 }
-function setQ(k,v,c){ const q=MARKET.quotes.filter(function(x){return x.k===k;})[0]; if(!q) return; if(v!==null&&v!==undefined&&!isNaN(v))q.v=v; if(c!==null&&c!==undefined&&!isNaN(c))q.c=c; }
-async function jget(url,ms){
-  const ctl=new AbortController(); const tm=setTimeout(function(){ctl.abort();},ms||3500);
-  try{ const r=await fetch(url,{signal:ctl.signal,mode:'cors'}); clearTimeout(tm); if(!r.ok) throw 0; return await r.json(); }
-  catch(e){ clearTimeout(tm); return null; }
+function renderThemeCards(){
+  const p=profile();
+  $('theme-grid').innerHTML=THEMES.map(function(t){
+    return '<div class="tcard"><div class="tc-top"><span class="tc-n">'+t.n+'</span>'+
+      '<span class="tc-tag tt-'+t.tag+'">'+t.tag+'</span>'+
+      '<span class="tc-tag" style="background:var(--sky-soft);color:var(--navy)">'+p.n+' '+t.w[p.k]+'%</span></div>'+
+      '<p class="tc-why">'+t.why+'</p><p class="tc-how">'+t.how+'</p>'+
+      '<div class="tc-picks">'+t.picks.map(function(x){ return '<span class="pick">'+x+'</span>'; }).join('')+'</div></div>';
+  }).join('');
 }
-async function fetchLive(){
-  $('live-label').textContent='시세 조회 중…';
-  let ok=0;
-  const jobs=[
-    ['https://api.stock.naver.com/index/KOSPI/basic','kospi'],
-    ['https://api.stock.naver.com/index/KOSDAQ/basic','kosdaq'],
-    ['https://api.stock.naver.com/index/.INX/basic','spx'],
-    ['https://api.stock.naver.com/index/.IXIC/basic','ndx']
-  ];
-  for(let i=0;i<jobs.length;i++){
-    const d=await jget(jobs[i][0]);
-    if(d&&d.closePrice){
-      setQ(jobs[i][1], Number(String(d.closePrice).replace(/,/g,'')), d.fluctuationsRatio!==undefined?Number(d.fluctuationsRatio):null);
-      ok++;
-    }
-  }
-  const fx=await jget('https://api.stock.naver.com/marketindex/exchange/FX_USDKRW');
-  if(fx&&fx.calcPrice){ setQ('usdkrw',Number(String(fx.calcPrice).replace(/,/g,'')),null); ok++; }
-  renderQuotes();
-  if(ok>0){
-    $('live-dot').classList.add('on');
-    $('live-label').textContent='실시간 조회 '+ok+'개 항목 반영 · 나머지는 '+MARKET.asOf+' 기준';
-  }else{
-    $('live-dot').classList.remove('on');
-    $('live-label').textContent='자동 조회 차단됨 — 내장 스냅샷('+MARKET.asOf+') 기준으로 진단합니다';
-  }
-}
-$('btn-refresh').onclick=fetchLive;
 
 /* =======================================================================
-   10. 진단 엔진
+   11. 진단 엔진
    ======================================================================= */
-function clamp(v,a,b){ return Math.max(a,Math.min(b,v)); }
 function hhi(map,total){ let h=0; Object.keys(map).forEach(function(k){ const w=map[k]*100/total; h+=w*w; }); return h; }
+const INCOME_SECS={short:['bond_s','cash'], mid:['bond_m'], long:['bond_l'], divid:['divid','cover']};
 
 function diagnose(){
   const rows=HOLD.filter(function(h){ return (Number(h.amt)||0)>0 && String(h.name).trim(); });
   if(!rows.length){ toast('잔고를 먼저 입력해 주세요'); return; }
   const total=rows.reduce(function(a,b){ return a+Number(b.amt); },0);
+  const buySum=rows.reduce(function(a,b){ return a+(Number(b.buy)||0); },0);
+  const portRate = buySum>0 ? (total-buySum)/buySum*100 : null;
   const p=profile(), tgt=targetAlloc(p);
 
   const byCls={},bySec={},byReg={};
@@ -1382,44 +1486,36 @@ function diagnose(){
     byReg[h.reg]=(byReg[h.reg]||0)+Number(h.amt);
   });
   const curPct={}; Object.keys(CLASSES).forEach(function(k){ curPct[k]=byCls[k]*100/total; });
+  const secPct=function(list){ let s=0; list.forEach(function(k){ s+=(bySec[k]||0); }); return s*100/total; };
 
   /* --- 점수 --- */
   let dev=0; Object.keys(CLASSES).forEach(function(k){ dev+=Math.abs(curPct[k]-tgt[k]); });
   const turnover=dev/2;
   const sAlloc=clamp(100-turnover*2.0,0,100);
-
-  const hC=hhi(byCls,total);
-  let hS={}; rows.forEach(function(h){ hS[h.name+h.id]=Number(h.amt); });
-  const hPos=hhi(hS,total);
-  const neff=10000/hPos;
+  const posMap={}; rows.forEach(function(h){ posMap[h.id]=Number(h.amt); });
+  const neff=10000/hhi(posMap,total);
   const maxW=Math.max.apply(null,rows.map(function(h){ return Number(h.amt)*100/total; }));
   const sConc=clamp(100-Math.max(0,maxW-25)*2.4-Math.max(0,6-neff)*7,0,100);
-
   const neffR=10000/hhi(byReg,total), neffS=10000/hhi(bySec,total);
   const sDiv=clamp(28+neffR*15+neffS*8,0,100);
-
-  let wsum=0; rows.forEach(function(h){ const s=(MARKET.sector[h.sec]||{s:0}).s; wsum+=s*Number(h.amt)/total; });
+  let wsum=0; rows.forEach(function(h){ wsum+=((MARKET.sector[h.sec]||{s:0}).s)*Number(h.amt)/total; });
   const sRegime=clamp(50+wsum*22,0,100);
-
   const score=Math.round(sAlloc*0.35+sConc*0.20+sDiv*0.15+sRegime*0.30);
   const grade = score>=80?['A','우수']:score>=65?['B','양호']:score>=50?['C','보완 필요']:['D','재구성 권고'];
 
   drawGauge(score,grade);
   $('score-bars').innerHTML=[
-    ['성향 적합도',sAlloc,'선택한 투자성향의 목표 자산배분과 얼마나 일치하는지'],
-    ['분산 · 집중도',sConc,'특정 종목 쏠림 정도'],
-    ['지역 · 섹터 분산',sDiv,'자산이 여러 지역·업종에 나뉘어 있는지'],
-    ['현재 시황 정합도',sRegime,'지금 시장 국면에 유리한 자산을 담고 있는지']
+    ['성향 적합도',sAlloc],['분산 · 집중도',sConc],['지역 · 테마 분산',sDiv],['현재 시황 정합도',sRegime]
   ].map(function(b){
     const cl=b[1]>=75?'good':b[1]>=55?'':b[1]>=40?'warn':'bad';
-    return '<div class="sb" title="'+b[2]+'"><span class="sb-n">'+b[0]+'</span>'+
-      '<span class="sb-track"><span class="sb-fill '+cl+'" style="width:'+b[1].toFixed(0)+'%"></span></span>'+
+    return '<div class="sb"><span class="sb-n">'+b[0]+'</span><span class="sb-track">'+
+      '<span class="sb-fill '+cl+'" style="width:'+b[1].toFixed(0)+'%"></span></span>'+
       '<span class="sb-v">'+Math.round(b[1])+'</span></div>';
   }).join('');
 
   drawDonut(curPct);
 
-  $('gap-sub').textContent=p.n+' 기준 · 현재 시황을 반영해 채권 듀레이션을 줄이고 현금·실물자산 비중을 높인 목표치입니다.';
+  $('gap-sub').textContent=p.n+' 기준 · 현재 시황을 반영해 채권 듀레이션을 줄이고 현금 · 실물자산 비중을 높인 목표치입니다.';
   $('gap-list').innerHTML=Object.keys(CLASSES).map(function(k){
     const c=curPct[k],t=tgt[k],d=c-t;
     const st=Math.abs(d)<=4?'ok':d>0?'over':'under';
@@ -1428,35 +1524,76 @@ function diagnose(){
       '<div class="gap-track"><span class="gap-cur" style="width:'+clamp(c,0,100)+'%"></span><span class="gap-tgt" style="left:calc('+clamp(t,0,100)+'% - 1.5px)"></span></div></div>';
   }).join('');
 
+  /* --- 주도 테마 배분 --- */
+  const themeRows=THEMES.map(function(t){
+    const cur=secPct(t.secs), tg=t.w[p.k];
+    return {t:t,cur:cur,tg:tg,d:tg-cur};
+  });
+  const themeSum=themeRows.reduce(function(a,b){ return a+b.tg; },0);
+  $('theme-alloc-sub').innerHTML=p.n+' 기준 권장 비중(전체 자산 대비) 합계 <b>'+themeSum+'%</b> · 나머지는 대표지수 등 코어 자산과 채권 · 현금으로 채웁니다.';
+  const scale=Math.max(20, Math.max.apply(null,themeRows.map(function(r){ return Math.max(r.cur,r.tg); }))*1.15);
+  $('theme-alloc').innerHTML=themeRows.map(function(r){
+    const st=Math.abs(r.d)<=1.5?'ok':r.d>0?'up':'dn';
+    const lbl=Math.abs(r.d)<=1.5?'적정':(r.d>0?'+'+won(r.d*total/100)+'원':'-'+won(-r.d*total/100)+'원');
+    return '<div class="tal"><div class="tal-n">'+r.t.n+'<small>'+r.t.tag+'</small></div>'+
+      '<div class="tal-bar"><span class="tal-cur" style="width:'+clamp(r.cur/scale*100,0,100)+'%"></span>'+
+      '<span class="tal-tgt" style="left:calc('+clamp(r.tg/scale*100,0,100)+'% - 1.5px)"></span></div>'+
+      '<div class="tal-v '+st+'">'+pct(r.cur)+'% → '+r.tg+'%<small>'+lbl+'</small></div></div>';
+  }).join('');
+  const needTheme=themeRows.filter(function(r){ return r.d>1.5; }).sort(function(a,b){ return b.d-a.d; });
+  $('theme-alloc-note').innerHTML='막대는 현재 보유 비중, 주황색 선은 '+p.n+' 권장 비중입니다. '+
+    (needTheme.length?'지금 가장 비어 있는 영역은 <b>'+needTheme.slice(0,3).map(function(r){ return r.t.n; }).join(', ')+'</b>이며, 각 테마의 대표 상품은 STEP 4 테마 카드에 정리되어 있습니다. 한 번에 채우기보다 2~3회로 나누어 접근하시기 바랍니다.':'주요 테마 비중이 권장 범위 안에 들어와 있습니다. 개별 종목 단위의 쏠림만 추가로 점검하시면 됩니다.');
+
+  /* --- 채권 · 인컴 가이드 --- */
+  const g=INCOME_GUIDE[p.k];
+  const incRows=['short','mid','long','divid'].map(function(k){
+    const cur=secPct(INCOME_SECS[k]);
+    return {k:k,n:INCOME_LBL[k],cur:cur,tg:g[k],d:g[k]-cur};
+  });
+  const bondTot=g.short+g.mid+g.long;
+  $('income-sub').innerHTML=p.n+' 기준 채권 · 현금 합계 <b>'+bondTot+'%</b>, 배당 · 커버드콜 <b>'+g.divid+'%</b> · 금리가 높은 국면이라 만기를 짧게 가져가는 것이 핵심입니다.';
+  const iscale=Math.max(20, Math.max.apply(null,incRows.map(function(r){ return Math.max(r.cur,r.tg); }))*1.15);
+  $('income-alloc').innerHTML=incRows.map(function(r){
+    const st=Math.abs(r.d)<=1.5?'ok':r.d>0?'up':'dn';
+    const lbl=Math.abs(r.d)<=1.5?'적정':(r.d>0?'+'+won(r.d*total/100)+'원':'-'+won(-r.d*total/100)+'원');
+    return '<div class="tal"><div class="tal-n">'+r.n+'<small>'+INCOME_PICKS[r.k].slice(0,2).join(' · ')+'</small></div>'+
+      '<div class="tal-bar"><span class="tal-cur" style="width:'+clamp(r.cur/iscale*100,0,100)+'%"></span>'+
+      '<span class="tal-tgt" style="left:calc('+clamp(r.tg/iscale*100,0,100)+'% - 1.5px)"></span></div>'+
+      '<div class="tal-v '+st+'">'+pct(r.cur)+'% → '+r.tg+'%<small>'+lbl+'</small></div></div>';
+  }).join('');
+  const longOver=incRows[2].d<-1.5;
+  $('income-note').innerHTML=g.note+(longOver?' 현재 장기채가 권장 비중을 넘고 있어, 만기가 짧은 상품으로 옮기면 금리 변동에 따른 평가손 위험을 크게 줄일 수 있습니다.':'');
+
   /* --- 체크포인트 --- */
   const alerts=[];
-  const riskW=(curPct.kr_eq+curPct.gl_eq+curPct.alt);
-  const bandLo=[0,20,40,60,80][PROFILES.indexOf(p)], bandHi=[20,40,60,80,100][PROFILES.indexOf(p)];
-  if(riskW>bandHi+5) alerts.push(['high','성향 초과','위험자산 비중이 <b>'+pct(riskW)+'%</b>로 '+p.n+'의 권고 범위('+bandLo+'~'+bandHi+'%)를 넘습니다. 투자자성향 재확인 또는 위험자산 축소가 필요합니다.']);
-  else if(riskW<bandLo-5) alerts.push(['mid','기대수익 부족','위험자산 비중이 <b>'+pct(riskW)+'%</b>로 '+p.n+' 권고 범위보다 낮습니다. 목표 수익률 달성이 어려울 수 있습니다.']);
+  const riskW=curPct.kr_eq+curPct.gl_eq+curPct.alt;
+  const idx=PROFILES.indexOf(p), bandLo=[0,20,40,60,80][idx], bandHi=[20,40,60,80,100][idx];
+  if(riskW>bandHi+5) alerts.push(['high','성향 초과','위험자산 비중이 <b>'+pct(riskW)+'%</b>로 '+p.n+' 권고 범위('+bandLo+'~'+bandHi+'%)를 넘습니다. 투자자성향 재확인 또는 위험자산 축소가 필요합니다.']);
+  else if(riskW<bandLo-5) alerts.push(['mid','기대수익 부족','위험자산 비중이 <b>'+pct(riskW)+'%</b>로 '+p.n+' 권고 범위보다 낮아 목표 수익률 달성이 어려울 수 있습니다.']);
   else alerts.push(['good','성향 적합','위험자산 비중 <b>'+pct(riskW)+'%</b>로 '+p.n+' 권고 범위 안에 있습니다.']);
 
   const top=rows.slice().sort(function(a,b){ return b.amt-a.amt; })[0];
-  if(maxW>30) alerts.push(['high','과도한 집중','<b>'+top.name+'</b> 한 종목이 전체의 <b>'+pct(maxW)+'%</b>입니다. 개별 종목 리스크가 포트폴리오 전체 성과를 좌우하는 구조이므로 분할이 필요합니다.']);
-  else if(maxW>20) alerts.push(['mid','집중도 주의','<b>'+top.name+'</b> 비중이 '+pct(maxW)+'%입니다. 외국인 매도가 집중된 현 국면에서는 20% 이내 관리를 권합니다.']);
+  if(maxW>30) alerts.push(['high','과도한 집중','<b>'+top.name+'</b> 한 종목이 전체의 <b>'+pct(maxW)+'%</b>입니다. 개별 종목 리스크가 전체 성과를 좌우하는 구조이므로 분할이 필요합니다.']);
+  else if(maxW>20) alerts.push(['mid','집중도 주의','<b>'+top.name+'</b> 비중이 '+pct(maxW)+'%입니다. 외국인 수급 변동이 큰 국면에서는 20% 이내 관리를 권합니다.']);
 
-  const semiW=((bySec.semi||0)+(bySec.bigcap_growth||0))*100/total;
-  if(semiW>35) alerts.push(['high','반도체·성장테마 쏠림','반도체와 고밸류 테마 합산 <b>'+pct(semiW)+'%</b>입니다. 금리 5% 구간에서 변동성이 가장 큰 영역이라 일부를 배당·인컴 자산으로 옮기는 것이 안전합니다.']);
-
-  const durW=(bySec.bond_l||0)*100/total;
-  if(durW>10) alerts.push(['high','듀레이션 위험','장기채 비중이 <b>'+pct(durW)+'%</b>입니다. 미 10년물이 5%를 돌파한 국면에서 평가손 확대 위험이 가장 큰 자산군입니다. 단기채·파킹형으로 교체를 검토하세요.']);
-  const reitW=(bySec.reit||0)*100/total;
-  if(reitW>8) alerts.push(['mid','금리 민감자산','리츠·부동산 비중이 <b>'+pct(reitW)+'%</b>입니다. 조달금리 상승 구간에서는 배당 매력이 상대적으로 약해집니다.']);
-
-  const oversea=(byReg.us||0)+(byReg.gl||0)+(byReg.jp||0)+(byReg.cn||0)+(byReg.in||0)+(byReg.eu||0)+(byReg.tw||0);
-  const osW=oversea*100/total;
-  if(osW<15 && p.k!=='stable') alerts.push(['mid','지역 분산 부족','해외자산 비중이 <b>'+pct(osW)+'%</b>에 그칩니다. 원화 약세 국면에서는 통화 분산 자체가 방어 수단이 됩니다.']);
-  if(osW>85) alerts.push(['info','환위험 집중','해외자산이 <b>'+pct(osW)+'%</b>입니다. 환헤지 여부를 점검하고 원화 자산을 일부 확보해 두세요.']);
-
-  if(curPct.cash<3) alerts.push(['mid','현금 여력 부족','현금성 자산이 <b>'+pct(curPct.cash)+'%</b>입니다. FOMC 결과에 따라 방향이 크게 갈릴 수 있어 대기 자금 확보를 권합니다.']);
-
+  const growthW=secPct(['bigcap_growth']);
+  if(secPct(['semi'])>30) alerts.push(['mid','반도체 쏠림','반도체 비중이 <b>'+pct(secPct(['semi']))+'%</b>입니다. 실적은 견조하지만 수급에 따른 변동폭이 커서, 일부를 전력 인프라나 배당 자산으로 옮겨 분산하는 편이 안전합니다.']);
+  if(growthW>12) alerts.push(['high','고밸류 테마 과다','이익이 먼 미래에 있는 테마 비중이 <b>'+pct(growthW)+'%</b>입니다. 금리 상승 구간에서 가장 먼저 조정받는 영역입니다.']);
+  const durW=secPct(['bond_l']);
+  if(durW>8) alerts.push(['high','듀레이션 위험','장기채 비중이 <b>'+pct(durW)+'%</b>입니다. 금리 상승 국면에서 평가손 위험이 가장 큰 자산군이라 단기채 · 파킹형 교체를 검토하세요.']);
+  const reitW=secPct(['reit']);
+  if(reitW>8) alerts.push(['mid','금리 민감자산','리츠 · 부동산 비중이 <b>'+pct(reitW)+'%</b>입니다. 조달금리 상승 구간에서는 배당 매력이 상대적으로 약해집니다.']);
+  const incW=secPct(['divid','cover','telecom','bond_s','cash']);
+  if(incW<g.short+g.divid-8) alerts.push(['mid','인컴 자산 부족','배당 · 단기채 · 파킹형을 합한 인컴 자산이 <b>'+pct(incW)+'%</b>로 권장 수준에 못 미칩니다. 변동성 국면에서 하방을 지지해 줄 현금흐름이 얇습니다.']);
+  const osW=(byReg.us||0)+(byReg.gl||0)+(byReg.jp||0)+(byReg.cn||0)+(byReg.in||0)+(byReg.eu||0)+(byReg.tw||0);
+  const osPct=osW*100/total;
+  if(osPct<15 && p.k!=='stable') alerts.push(['mid','지역 분산 부족','해외자산 비중이 <b>'+pct(osPct)+'%</b>에 그칩니다. 원화 약세 국면에서는 통화 분산 자체가 방어 수단이 됩니다.']);
+  if(osPct>85) alerts.push(['info','환위험 집중','해외자산이 <b>'+pct(osPct)+'%</b>입니다. 환헤지 여부를 점검하고 원화 자산을 일부 확보해 두세요.']);
+  if(curPct.cash<3) alerts.push(['mid','현금 여력 부족','현금성 자산이 <b>'+pct(curPct.cash)+'%</b>입니다. 금리 결정과 지정학 이벤트가 겹친 구간이라 대기 자금 확보를 권합니다.']);
   const overRisk=rows.filter(function(h){ return h.risk>p.maxRisk; });
   if(overRisk.length) alerts.push(['high','성향 대비 고위험 종목','<b>'+overRisk.map(function(h){return h.name;}).slice(0,4).join(', ')+'</b>'+(overRisk.length>4?' 외 '+(overRisk.length-4)+'종목':'')+'은(는) '+p.n+' 고객에게 위험등급이 높습니다. 적합성 확인이 필요합니다.']);
+  const bigLoss=rows.filter(function(h){ return h.buy>0 && (h.amt-h.buy)/h.buy*100<=-20; });
+  if(bigLoss.length) alerts.push(['info','손실 확대 종목','<b>'+bigLoss.map(function(h){ return h.name+'('+pct((h.amt-h.buy)/h.buy*100,1)+'%)'; }).slice(0,3).join(', ')+'</b>의 평가손이 큽니다. 시황상 회복 가능성과 세금 효과를 함께 보고 손절 · 교체 여부를 판단하세요.']);
 
   $('alert-list').innerHTML=alerts.map(function(a){
     return '<div class="alert '+a[0]+'"><span class="al-i">'+(a[0]==='high'?'!':a[0]==='mid'?'△':a[0]==='good'?'✓':'i')+'</span><span><b>'+a[1]+'</b> — '+a[2]+'</span></div>';
@@ -1467,25 +1604,26 @@ function diagnose(){
     const w=Number(h.amt)*100/total;
     const sec=MARKET.sector[h.sec]||{s:0,n:'미분류',r:''};
     const clsGap=curPct[h.cls]-tgt[h.cls];
+    const rate=h.buy>0?(h.amt-h.buy)/h.buy*100:null;
     let v='keep',why=[];
     if(h.risk>p.maxRisk){ v='swap'; why.push('위험등급이 '+p.n+' 허용 범위를 넘습니다'); }
     if(sec.s<=-2){ v='swap'; why.push(sec.r); }
     else if(sec.s===-1){ if(v!=='swap') v='trim'; why.push(sec.r); }
     if(w>30){ v = v==='swap'?'swap':'trim'; why.push('단일 종목 비중 '+pct(w)+'%로 집중도가 과도합니다'); }
     else if(w>20 && v!=='swap' && clsGap>-3){ if(v==='keep') v='trim'; why.push('비중 '+pct(w)+'%로 상위 집중 구간입니다'); }
-    else if(w>20 && v==='keep'){ why.push('비중 '+pct(w)+'%로 비중은 높지만 해당 자산군 자체가 목표에 미달해 유지 가능합니다'); }
     if(v==='keep'&&clsGap>6){ v='trim'; why.push(CLASSES[h.cls].n+' 자산군이 목표 대비 '+pct(clsGap)+'%p 초과입니다'); }
     if(v==='keep'&&sec.s>=1&&clsGap<-5){ v='add'; why.push(sec.r+' · '+CLASSES[h.cls].n+' 자산군도 목표 대비 '+pct(-clsGap)+'%p 부족합니다'); }
+    if(v==='keep'&&sec.s>=2){ v='add'; why.push(sec.r); }
     if(v==='keep'&&sec.s>=1){ why.push(sec.r); }
     if(!why.length) why.push(sec.r||'시황 영향이 중립적인 구간입니다');
-    return {h:h,w:w,sec:sec,v:v,why:why.join('. ')+'.'};
+    return {h:h,w:w,sec:sec,v:v,rate:rate,why:why.join('. ')+'.'};
   });
   const ORD={swap:0,trim:1,add:2,keep:3};
   verdicts.sort(function(a,b){ return (ORD[a.v]-ORD[b.v])||(b.w-a.w); });
   window._VERDICTS=verdicts;
   renderVerdicts('all');
 
-  /* --- 리밸런싱 실행안 --- */
+  /* --- 자산군 리밸런싱 --- */
   const sell=[],buy=[];
   Object.keys(CLASSES).forEach(function(k){
     const d=(tgt[k]-curPct[k])*total/100;
@@ -1506,42 +1644,48 @@ function diagnose(){
     return '<div class="act-item"><div><div class="act-l">'+a.n+'</div><div class="act-why">'+a.why+'</div></div><div class="act-v">+'+won(a.amt)+'원</div></div>';
   }).join(''):'<div class="act-empty">목표 대비 크게 부족한 자산군이 없습니다.</div>';
 
-  /* --- 요약 · 코멘트 --- */
+  /* --- 요약 · 상담 코멘트 --- */
   const nSwap=verdicts.filter(function(v){return v.v==='swap';}).length;
   const nTrim=verdicts.filter(function(v){return v.v==='trim';}).length;
   const nAdd=verdicts.filter(function(v){return v.v==='add';}).length;
   $('headline-t').textContent=p.n+' 기준 진단 '+score+'점 · '+grade[1];
   $('headline-p').innerHTML=
-    '총 평가금액 <b>'+won(total)+'원</b>, '+rows.length+'개 종목 기준입니다. 위험자산 비중은 <b>'+pct(riskW)+'%</b>'+
-    (riskW>bandHi+5?'로 성향 권고 범위를 초과':riskW<bandLo-5?'로 성향 권고 범위에 미달':'로 성향에 부합')+'하며, '+
+    '총 평가금액 <b>'+won(total)+'원</b>, '+rows.length+'개 종목'+
+    (portRate===null?'':', 전체 손익률 <b style="color:'+(portRate>=0?'var(--up)':'var(--down)')+'">'+(portRate>=0?'+':'')+pct(portRate,2)+'%</b>')+' 기준입니다. '+
+    '위험자산 비중은 <b>'+pct(riskW)+'%</b>'+(riskW>bandHi+5?'로 성향 권고 범위를 초과':riskW<bandLo-5?'로 성향 권고 범위에 미달':'로 성향에 부합')+'하며, '+
     '목표 배분에 맞추려면 전체의 약 <b>'+pct(turnover)+'%</b>('+won(turnover*total/100)+'원)를 이동시켜야 합니다. '+
-    '현 시황 기준으로 교체검토 '+nSwap+'종목, 비중축소 '+nTrim+'종목, 비중확대 '+nAdd+'종목이 도출되었습니다. '+
-    '가장 시급한 항목은 '+(nSwap?'<b>'+verdicts[0].h.name+'</b>의 교체 검토':nTrim?'<b>'+verdicts[0].h.name+'</b>의 비중 조정':'현재 구성의 유지와 정기 점검')+'입니다.';
+    '현 시황 기준으로 교체검토 '+nSwap+'종목, 비중축소 '+nTrim+'종목, 비중확대 '+nAdd+'종목이 도출되었고, '+
+    (needTheme.length?'테마 관점에서는 <b>'+needTheme[0].t.n+'</b>이 가장 비어 있습니다.':'테마 배분은 권장 범위 안에 있습니다.');
 
-  const lines=[];
-  lines.push('['+p.n+' 포트폴리오 진단 · '+MARKET.asOf+' 기준]');
-  lines.push('');
-  lines.push('현재 잔고는 총 '+won(total)+'원, '+rows.length+'개 종목으로 구성되어 있습니다. 자산군으로 보면 '+
-    Object.keys(CLASSES).filter(function(k){return curPct[k]>=1;}).map(function(k){ return CLASSES[k].n+' '+pct(curPct[k])+'%'; }).join(', ')+' 입니다.');
-  lines.push('');
-  lines.push('지금 시장은 '+MARKET.title+'입니다. 미 국채 10년물이 5%를 넘어섰고 브렌트유가 107달러대까지 오르면서, 할인율은 높아지고 원가는 상승하는 이중 압박이 이어지고 있습니다. 9월 FOMC에서 3년 만의 금리 인상 가능성이 높게 반영되어 있어 결과 확인 전까지는 변동성이 이어질 수 있습니다.');
-  lines.push('');
+  const L=[];
+  L.push('['+p.n+' 포트폴리오 진단 · '+MARKET.asOf+' 기준]');
+  L.push('');
+  L.push('현재 잔고는 총 '+won(total)+'원, '+rows.length+'개 종목입니다'+(portRate===null?'':' (전체 손익률 '+(portRate>=0?'+':'')+pct(portRate,2)+'%)')+'. 자산군으로 보면 '+
+    Object.keys(CLASSES).filter(function(k){ return curPct[k]>=1; }).map(function(k){ return CLASSES[k].n+' '+pct(curPct[k])+'%'; }).join(', ')+' 입니다.');
+  L.push('');
+  L.push('지금 시장은 금리와 유가가 동시에 오르면서 할인율이 다시 높아지는 국면입니다. 다만 AI 투자 사이클이 만들어내는 실제 설비투자와 매출은 이어지고 있어, 지수는 흔들려도 업종별 편차가 크게 벌어지는 장세입니다. 이런 구간에서는 시장 방향을 맞히기보다 흔들릴 때 버틸 수 있는 구성을 갖추는 것이 중요합니다.');
+  L.push('');
   if(nSwap||nTrim){
-    lines.push('현재 잔고에서 우선 점검이 필요한 부분은 다음과 같습니다.');
+    L.push('현재 잔고에서 먼저 점검이 필요한 부분입니다.');
     verdicts.filter(function(v){ return v.v==='swap'||v.v==='trim'; }).slice(0,4).forEach(function(v){
-      lines.push(' · '+v.h.name+' ('+pct(v.w)+'%) — '+v.why);
+      L.push(' · '+v.h.name+' (비중 '+pct(v.w)+'%'+(v.rate===null?'':', 손익률 '+(v.rate>=0?'+':'')+pct(v.rate,1)+'%')+') — '+v.why);
     });
-    lines.push('');
+    L.push('');
   }
-  if(buy.length){
-    lines.push('반대로 보강이 필요한 영역은 '+buy.map(function(b){ return b.n+' 약 '+won(b.amt)+'원'; }).join(', ')+'입니다. '+
-      '현 국면에서는 만기가 짧은 채권과 파킹형 자산, 배당·인컴형, 그리고 에너지·실물자산이 상대적으로 유리한 자리에 있습니다.');
-    lines.push('');
+  if(needTheme.length){
+    L.push('반대로 지금 국면에서 보강을 권해 드리는 테마입니다.');
+    needTheme.slice(0,3).forEach(function(r){
+      L.push(' · '+r.t.n+' — 현재 '+pct(r.cur)+'% → 권장 '+r.tg+'% (약 '+won(r.d*total/100)+'원). '+r.t.why);
+    });
+    L.push('');
   }
-  lines.push('다만 FOMC 결과에 따라 방향이 한 번에 바뀔 수 있는 구간이므로, 한 번에 전량을 조정하기보다 2~3회로 나누어 조정하시고 현금 여력을 일정 부분 남겨두실 것을 권해 드립니다. 자세한 내용은 방문 또는 통화로 안내해 드리겠습니다.');
-  lines.push('');
-  lines.push('미래에셋증권 투자센터대구WM 드림');
-  $('script-text').textContent=lines.join('\n');
+  L.push('안정 자산 쪽은 만기가 긴 채권 대신 짧은 만기 채권과 파킹형 상품으로 이자를 확보하시고, 배당·커버드콜처럼 현금흐름이 나오는 자산을 함께 두시는 것이 좋습니다. '+p.n+' 기준으로는 채권·현금 '+bondTot+
+    '%, 배당·커버드콜 '+g.divid+'% 정도가 적정 수준입니다. '+g.note);
+  L.push('');
+  L.push('다만 금리 결정과 지정학 이벤트가 겹쳐 있는 구간이라 한 번에 전량을 조정하기보다 2~3회로 나누어 옮기고 현금 여력을 남겨두실 것을 권해 드립니다. 자세한 내용은 방문 또는 통화로 안내해 드리겠습니다.');
+  L.push('');
+  L.push('미래에셋증권 투자센터대구WM 드림');
+  $('script-text').textContent=L.join('\n');
 
   $('result-section').classList.add('show');
   $('result-section').scrollIntoView({behavior:'smooth',block:'start'});
@@ -1550,14 +1694,15 @@ function diagnose(){
 function renderVerdicts(f){
   const vs=(window._VERDICTS||[]).filter(function(v){ return f==='all'||v.v===f; });
   const LBL={keep:'유지',add:'비중확대',trim:'비중축소',swap:'교체검토'};
+  const REG={kr:'국내',us:'미국',gl:'글로벌',jp:'일본',cn:'중국',in:'인도',eu:'유럽',tw:'대만'};
   $('verdict-list').innerHTML = vs.length?vs.map(function(v){
-    return '<div class="vcard '+v.v+'"><div class="vc-top"><div><div class="vc-name">'+v.h.name+'</div>'+
-      '<div class="vc-meta">'+CLASSES[v.h.cls].n+' · '+v.sec.n+' · 위험등급 '+v.h.risk+'</div></div>'+
-      '<div class="vc-right"><div class="vc-w">'+pct(v.w)+'%</div><div class="vc-amt">'+won(v.h.amt)+'원</div></div></div>'+
+    return '<div class="vcard '+v.v+'"><div class="vc-top"><div><div class="vc-name">'+esc(v.h.name)+'</div>'+
+      '<div class="vc-meta">'+v.sec.n+' · '+CLASSES[v.h.cls].n+' · 위험등급 '+v.h.risk+'</div></div>'+
+      '<div class="vc-right"><div class="vc-w">'+pct(v.w)+'%</div><div class="vc-amt">'+won(v.h.amt)+'원'+
+      (v.rate===null?'':' <span style="color:'+(v.rate>=0?'var(--up)':'var(--down)')+';font-weight:700">'+(v.rate>=0?'+':'')+pct(v.rate,1)+'%</span>')+'</div></div></div>'+
       '<span class="vc-verdict vv-'+v.v+'">'+LBL[v.v]+'</span>'+
       '<div class="vc-reason">'+v.why+'</div>'+
-      '<div class="vc-tags"><span class="vtag">시황점수 '+(v.sec.s>0?'+':'')+v.sec.s+'</span><span class="vtag">'+
-      ({kr:'국내',us:'미국',gl:'글로벌',jp:'일본',cn:'중국',in:'인도',eu:'유럽',tw:'대만'}[v.h.reg]||'기타')+'</span></div></div>';
+      '<div class="vc-tags"><span class="vtag">시황점수 '+(v.sec.s>0?'+':'')+v.sec.s+'</span><span class="vtag">'+(REG[v.h.reg]||'기타')+'</span></div></div>';
   }).join(''):'<div class="act-empty">해당 구분의 종목이 없습니다.</div>';
 }
 $('verdict-tabs').addEventListener('click',function(e){
@@ -1567,10 +1712,10 @@ $('verdict-tabs').addEventListener('click',function(e){
 });
 
 /* =======================================================================
-   11. 차트
+   12. 차트
    ======================================================================= */
 function drawGauge(score,grade){
-  const cx=100,cy=100,r=78, a=Math.PI*(1-score/100);
+  const cx=100,cy=100,r=78,a=Math.PI*(1-score/100);
   const x=cx+r*Math.cos(a), y=cy-r*Math.sin(a);
   const col=score>=80?'#2E8540':score>=65?'#043B72':score>=50?'#C9A227':'#C62828';
   $('gauge-svg').innerHTML=
@@ -1578,39 +1723,35 @@ function drawGauge(score,grade){
     '<path d="M22 100 A78 78 0 '+(score>50?1:0)+' 1 '+x.toFixed(1)+' '+y.toFixed(1)+'" fill="none" stroke="'+col+'" stroke-width="14" stroke-linecap="round"/>'+
     '<text x="100" y="92" text-anchor="middle" class="gauge-score">'+score+'</text>'+
     '<text x="100" y="112" text-anchor="middle" class="gauge-unit">/ 100점</text>';
-  const g=$('gauge-grade'); g.textContent=grade[0]+' · '+grade[1];
-  g.className='gauge-grade g-'+grade[0];
+  const g=$('gauge-grade'); g.textContent=grade[0]+' · '+grade[1]; g.className='gauge-grade g-'+grade[0];
 }
 function drawDonut(cur){
   const R=45,C=2*Math.PI*R; let off=0,segs='',leg='';
-  Object.keys(CLASSES).forEach(function(k){
-    const v=cur[k]||0; if(v<=0.05){ leg+=legRow(k,v); return; }
-    const len=C*v/100;
-    segs+='<circle cx="60" cy="60" r="'+R+'" fill="none" stroke="'+CLASSES[k].c+'" stroke-width="20" '+
-          'stroke-dasharray="'+len.toFixed(2)+' '+(C-len).toFixed(2)+'" stroke-dashoffset="'+(-off).toFixed(2)+'" transform="rotate(-90 60 60)"/>';
-    off+=len; leg+=legRow(k,v);
-  });
   function legRow(k,v){ return '<div class="lg"><span class="lg-sw" style="background:'+CLASSES[k].c+'"></span><span class="lg-n">'+CLASSES[k].n+'</span><span class="lg-v">'+pct(v)+'%</span></div>'; }
+  Object.keys(CLASSES).forEach(function(k){
+    const v=cur[k]||0; leg+=legRow(k,v); if(v<=0.05) return;
+    const len=C*v/100;
+    segs+='<circle cx="60" cy="60" r="'+R+'" fill="none" stroke="'+CLASSES[k].c+'" stroke-width="20" stroke-dasharray="'+len.toFixed(2)+' '+(C-len).toFixed(2)+'" stroke-dashoffset="'+(-off).toFixed(2)+'" transform="rotate(-90 60 60)"/>';
+    off+=len;
+  });
   $('donut-svg').innerHTML=segs+'<circle cx="60" cy="60" r="34" fill="#fff"/>';
   $('donut-legend').innerHTML=leg;
 }
 
 /* =======================================================================
-   12. 기타 버튼
+   13. 버튼 · 초기화
    ======================================================================= */
 $('btn-diagnose').onclick=diagnose;
 $('btn-print').onclick=function(){ window.print(); };
 $('btn-copy').onclick=function(){
   const t=$('script-text').textContent;
-  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(t).then(function(){ toast('상담 코멘트를 복사했습니다'); }); }
+  if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(function(){ toast('상담 코멘트를 복사했습니다'); });
   else{ const ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); toast('상담 코멘트를 복사했습니다'); }
 };
-
-/* init */
 renderProfiles();
-renderQuotes();
+renderMarket();
+renderThemeCards();
 renderHold();
-fetchLive();
 </script>
 </body>
 </html>
